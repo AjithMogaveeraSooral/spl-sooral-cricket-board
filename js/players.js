@@ -6,6 +6,7 @@ let rankedPlayersData = [];
 function calculateRanks(players) {
     // 1. Sort for Batting Rank (Total Runs)
     const battingSorted = [...players].sort((a, b) => b.total_runs - a.total_runs);
+    // ... (rest of the ranking logic remains the same)
     const battingMap = new Map(battingSorted.map((player, index) => [player.player_id, index + 1]));
 
     // 2. Sort for Bowling Rank (Total Wickets)
@@ -23,6 +24,23 @@ function calculateRanks(players) {
         bowling_rank: bowlingMap.get(player.player_id),
         allrounder_rank: allrounderMap.get(player.player_id)
     }));
+}
+
+// --- NEW SORTING FUNCTION ---
+
+function sortPlayersByName(players) {
+    // Sorts players alphabetically by name (case-insensitive)
+    return [...players].sort((a, b) => {
+        const nameA = a.name.toUpperCase();
+        const nameB = b.name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0; // names must be equal
+    });
 }
 
 
@@ -91,14 +109,18 @@ function filterPlayers() {
 
 // Main initialization function for the page
 async function initPlayerStats() {
-    const data = await fetchSPLData();
+    // Assuming fetchSPLData() is defined elsewhere and returns the player data
+    const data = await fetchSPLData(); 
     if (data && data.players) {
         allPlayersData = data.players;
         
         // 1. Calculate ranks for all players
-        rankedPlayersData = calculateRanks(allPlayersData);
+        let playersWithRanks = calculateRanks(allPlayersData);
         
-        // 2. Render all ranked players initially
+        // 2. Sort the ranked players alphabetically by name (NEW STEP)
+        rankedPlayersData = sortPlayersByName(playersWithRanks);
+        
+        // 3. Render the sorted, ranked players initially
         renderPlayerCards(rankedPlayersData); 
     }
 }
