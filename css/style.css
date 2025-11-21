@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #000080; /* Navy Blue */
+    --primary-color: #000080;
+    --background-color: #ffffff; /* Navy Blue */
     --accent-color: #02F4D4;  /* Bright Cyan */
     --text-color: #ffffff;    /* White text on dark background */
 }
