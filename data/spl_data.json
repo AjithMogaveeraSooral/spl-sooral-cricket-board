@@ -529,7 +529,7 @@
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
-      "profile_image_url": "images/Raghavendra Shriyan.jpg",
+      "profile_image_url": "images/Raghu Bava.jpg",
       "all_rounder_rating": 0.0
     },
     {
@@ -709,7 +709,7 @@
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
-      "profile_image_url": "images/Sandi.jpg",
+      "profile_image_url": "images/default_player.jpg",
       "all_rounder_rating": 3.5
     },
     {
@@ -964,7 +964,7 @@
       "bowling_overs": 25.2,
       "wickets": 12,
       "best_spell": "4-30",
-      "profile_image_url": "images/Munnanna.jpg",
+      "profile_image_url": "images/Munnanna.jpeg",
       "all_rounder_rating": 13.05
     },
     {
@@ -1028,6 +1028,21 @@
       "all_rounder_rating": 3.33
     },
     {
+      "player_id": "P057",
+      "name": "Vasudeva Balkat",
+      "matches": 4,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.00
+    },
+    {
       "player_id": "P079",
       "name": "Vasanth Gunda S",
       "matches": 1,
@@ -1054,7 +1069,7 @@
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
-      "profile_image_url": "images/Vikas.jpg",
+      "profile_image_url": "images/Vikas.jpeg",
       "all_rounder_rating": 0.0
     },
     {
