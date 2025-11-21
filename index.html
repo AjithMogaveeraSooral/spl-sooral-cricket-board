@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooral Premier League - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific styling for the Home Page */
+        #key-stats-container {
+            display: flex;
+            justify-content: space-around;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #key-stats-container div h3 {
+            color: var(--accent-color);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        /* Leader Cards for Top Individual Stats */
+        #leaders-container {
+            display: flex;
+            justify-content: space-between; 
+            gap: 20px;
+            margin-top: 20px;
+        }
+        #leaders-container .player-card {
+            width: 33%; 
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        #leaders-container .player-card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(2, 244, 212, 0.5);
+        }
+
+        /* Ranking Lists */
+        #ranking-container {
+            display: flex; 
+            justify-content: space-between; 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+        .ranking-list {
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(2, 244, 212, 0.5);
+        }
+        .ranking-list h3 {
+            color: var(--accent-color);
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="announcement-bar">Loading Announcement...</div>
+
+    <header>
+        <h1>Sooral Premier League (SPL)</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments</a>
+            <a href="player_stats.html">Player Stats</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to the SPL!</h2>
+        <p>The premier cricket tournament in Sooral, featuring 5 seasons of exciting action. All lifetime statistics are updated here.</p>
+
+        <section id="key-stats-container">
+            <div id="total-tournaments"></div>
+            <div id="total-matches"></div>
+            <div id="total-players"></div>
+        </section>
+        
+        ---
+
+        <h2>League Leaders (Lifetime)</h2>
+        
+        <section id="leaders-container">
+            <div id="highest-scorer-card" class="player-card"></div>
+            <div id="top-bowler-card" class="player-card"></div>
+            <div id="highest-six-hitter-card" class="player-card"></div>
+        </section>
+
+        ---
+
+        <h2>🏆 SPL Rank 1 Holders</h2>
+        
+        <section id="rank-1-holders-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 20px;">
+            <div id="rank-1-batter-card" style="width: 33%;"></div>
+            <div id="rank-1-bowler-card" style="width: 33%;"></div>
+            <div id="rank-1-allrounder-card" style="width: 33%;"></div>
+        </section>
+        
+        --- 
+        
+        <h2>🥇 SPL Rankings</h2>
+
+        <section id="ranking-container">
+            <div id="batting-ranking" class="ranking-list" style="width: 33%;">
+                <h3>Top Batting Ranking 🏏</h3>
+                <ul style="list-style-type: none; padding: 0;"></ul>
+            </div>
+            <div id="bowling-ranking" class="ranking-list" style="width: 33%;">
+                <h3>Top Bowling Ranking 🥎</h3>
+                <ul style="list-style-type: none; padding: 0;"></ul>
+            </div>
+            <div id="allrounder-ranking" class="ranking-list" style="width: 33%;">
+                <h3>Top All-rounder Ranking ⭐</h3>
+                <ul style="list-style-type: none; padding: 0;"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

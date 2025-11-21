@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPL Player Statistics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="announcement-bar"></div>
+
+    <header>
+        <h1>SPL Player Stats</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments</a>
+            <a href="player_stats.html">Player Stats</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>All Players: Lifetime Records</h2>
+        
+        <input 
+            type="text" 
+            id="player-search" 
+            placeholder="Filter players by name..."
+            onkeyup="filterPlayers()"
+            style="width: 300px; padding: 10px; margin-bottom: 20px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.5); color: var(--text-color); border-radius: 5px;"
+        >
+
+        <section id="player-cards-container">
+            </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/players.js"></script>
+</body>
+</html>

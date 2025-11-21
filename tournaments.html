@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPL Tournaments & Matches</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styling for the tournament page */
+        #tournament-selector {
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 2px solid var(--accent-color);
+            background: var(--primary-color);
+            color: var(--text-color);
+            border-radius: 5px;
+        }
+
+        #matches-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .match-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .match-card:hover {
+            background-color: rgba(2, 244, 212, 0.1);
+        }
+
+        .match-card h4 {
+            color: var(--accent-color);
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .match-card p {
+            margin: 5px 0;
+        }
+
+        .match-winner {
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Modal or dedicated scorecard display */
+        #scorecard-display {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border: 1px solid var(--accent-color);
+            border-radius: 10px;
+            margin-top: 30px;
+            min-height: 200px;
+        }
+        
+        #scorecard-display h3 {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div id="announcement-bar"></div>
+
+    <header>
+        <h1>SPL Tournaments & Matches</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments</a>
+            <a href="player_stats.html">Player Stats</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Select a Tournament:</h2>
+        
+        <select id="tournament-selector" onchange="loadMatches()">
+            <option value="">-- Select a Season --</option>
+            </select>
+
+        <section id="matches-container">
+            <p>Select a tournament above to see the matches.</p>
+        </section>
+        
+        <section id="scorecard-display">
+            <h3>Match Scorecard</h3>
+            <p id="match-details">Click on any match card to view the full scorecard summary.</p>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/tournaments.js"></script>
+</body>
+</html>
