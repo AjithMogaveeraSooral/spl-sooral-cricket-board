@@ -3,10 +3,26 @@ let rankedPlayersData = [];
 
 
 function calculateRanks(players) {
-    const battingSorted = [...players].sort((a, b) => b.total_runs - a.total_runs);
+    const parseBestSpell = (spell) => {
+        const parts = spell.split('/');
+        const wickets = parseInt(parts[0], 10);
+        const runs = parseInt(parts[1], 10);
+        return { wickets, runs };
+    };
+
+    const battingSorted = [...players].sort((a, b) => b.highest_score - a.highest_score);
     const battingMap = new Map(battingSorted.map((player, index) => [player.player_id, index + 1]));
 
-    const bowlingSorted = [...players].sort((a, b) => b.wickets - a.wickets);
+    const bowlingSorted = [...players].sort((a, b) => {
+        const spellA = parseBestSpell(a.best_spell);
+        const spellB = parseBestSpell(b.best_spell);
+
+        if (spellB.wickets !== spellA.wickets) {
+            return spellB.wickets - spellA.wickets;
+        }
+
+        return spellA.runs - spellB.runs;
+    });
     const bowlingMap = new Map(bowlingSorted.map((player, index) => [player.player_id, index + 1]));
 
     const allrounderSorted = [...players].sort((a, b) => b.all_rounder_rating - a.all_rounder_rating);
