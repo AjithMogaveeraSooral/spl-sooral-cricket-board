@@ -10,24 +10,24 @@
     {
       "player_id": "P005",
       "name": "Ranjith Serigara",
-      "matches": 7,
-      "innings": 7,
-      "total_runs": 53,
+      "matches": 11,
+      "innings": 11,
+      "total_runs": 68,
       "highest_score": 38,
       "fours": 0,
-      "sixes": 7,
-      "bowling_overs": 12.0,
-      "wickets": 3,
+      "sixes": 8,
+      "bowling_overs": 20.0,
+      "wickets": 5,
       "best_spell": "2-8",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 7.42
+      "all_rounder_rating": 7.91
     },
     {
       "player_id": "P006",
       "name": "Diganth",
-      "matches": 3,
-      "innings": 3,
-      "total_runs": 16,
+      "matches": 4,
+      "innings": 4,
+      "total_runs": 18,
       "highest_score": 11,
       "fours": 0,
       "sixes": 1,
@@ -35,164 +35,164 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/diganth.jpg",
-      "all_rounder_rating": 5.33
+      "all_rounder_rating": 5.25
     },
     {
       "player_id": "P007",
       "name": "Ajith Mogaveera",
-      "matches": 8,
-      "innings": 8,
-      "total_runs": 116,
+      "matches": 13,
+      "innings": 12,
+      "total_runs": 186,
       "highest_score": 40,
-      "fours": 1,
-      "sixes": 10,
-      "bowling_overs": 12.1,
-      "wickets": 9,
+      "fours": 3,
+      "sixes": 16,
+      "bowling_overs": 19.1,
+      "wickets": 12,
       "best_spell": "3-20",
       "profile_image_url": "images/Ajith.jpg",
-      "all_rounder_rating": 16.96
+      "all_rounder_rating": 17.54
     },
     {
       "player_id": "P008",
       "name": "Nithin S",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 36,
+      "matches": 9,
+      "innings": 9,
+      "total_runs": 61,
       "highest_score": 12,
-      "fours": 1,
-      "sixes": 2,
+      "fours": 2,
+      "sixes": 3,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 7.2
+      "all_rounder_rating": 6.78
     },
     {
       "player_id": "P009",
       "name": "Sharath Sooral",
-      "matches": 10,
-      "innings": 9,
-      "total_runs": 63,
-      "highest_score": 14,
-      "fours": 0,
-      "sixes": 3,
-      "bowling_overs": 26.0,
-      "wickets": 7,
+      "matches": 15,
+      "innings": 14,
+      "total_runs": 119,
+      "highest_score": 34,
+      "fours": 1,
+      "sixes": 8,
+      "bowling_overs": 38.0,
+      "wickets": 12,
       "best_spell": "2-7",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 9.27
+      "all_rounder_rating": 10.07
     },
     {
       "player_id": "P010",
       "name": "Raghavendra",
-      "matches": 8,
-      "innings": 7,
+      "matches": 11,
+      "innings": 8,
       "total_runs": 18,
       "highest_score": 12,
       "fours": 0,
       "sixes": 0,
-      "bowling_overs": 22.0,
-      "wickets": 13,
+      "bowling_overs": 29.0,
+      "wickets": 20,
       "best_spell": "3-8",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 9.38
+      "all_rounder_rating": 11.45
     },
     {
       "player_id": "P011",
       "name": "Shrisha Devadiga",
-      "matches": 9,
-      "innings": 6,
-      "total_runs": 11,
+      "matches": 13,
+      "innings": 7,
+      "total_runs": 13,
       "highest_score": 4,
       "fours": 0,
       "sixes": 0,
-      "bowling_overs": 17.0,
-      "wickets": 4,
-      "best_spell": "2-9",
+      "bowling_overs": 27.0,
+      "wickets": 7,
+      "best_spell": "3-18",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 3.73
+      "all_rounder_rating": 3.85
     },
     {
       "player_id": "P012",
       "name": "Prajwal Devadiga",
-      "matches": 8,
-      "innings": 7,
-      "total_runs": 178,
+      "matches": 12,
+      "innings": 11,
+      "total_runs": 205,
       "highest_score": 53,
       "fours": 3,
-      "sixes": 15,
-      "bowling_overs": 24.0,
-      "wickets": 8,
+      "sixes": 18,
+      "bowling_overs": 35.0,
+      "wickets": 12,
       "best_spell": "3-15",
       "profile_image_url": "images/Pajju.jpg",
-      "all_rounder_rating": 16.97
+      "all_rounder_rating": 17.5
     },
     {
       "player_id": "P013",
       "name": "Danush S",
-      "matches": 4,
-      "innings": 3,
+      "matches": 5,
+      "innings": 4,
       "total_runs": 14,
       "highest_score": 14,
       "fours": 0,
       "sixes": 2,
-      "bowling_overs": 4.0,
+      "bowling_overs": 5.0,
       "wickets": 1,
       "best_spell": "1-4",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 6.17
+      "all_rounder_rating": 5.6
     },
     {
       "player_id": "P014",
       "name": "Rakesh Sooral",
-      "matches": 7,
-      "innings": 5,
-      "total_runs": 23,
+      "matches": 11,
+      "innings": 6,
+      "total_runs": 24,
       "highest_score": 10,
       "fours": 2,
       "sixes": 1,
-      "bowling_overs": 16.0,
+      "bowling_overs": 18.2,
       "wickets": 11,
       "best_spell": "4-9",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 9.6
+      "all_rounder_rating": 8.18
     },
     {
       "player_id": "P015",
       "name": "Mahendra Kali",
-      "matches": 6,
-      "innings": 6,
-      "total_runs": 11,
-      "highest_score": 8,
-      "fours": 0,
-      "sixes": 1,
-      "bowling_overs": 0.0,
-      "wickets": 0,
-      "best_spell": "0-0",
-      "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 1.83
-    },
-    {
-      "player_id": "P016",
-      "name": "Sharath Sollekattu S",
-      "matches": 4,
-      "innings": 4,
-      "total_runs": 22,
-      "highest_score": 12,
-      "fours": 0,
+      "matches": 10,
+      "innings": 10,
+      "total_runs": 63,
+      "highest_score": 41,
+      "fours": 1,
       "sixes": 5,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 5.5
+      "all_rounder_rating": 6.3
+    },
+    {
+      "player_id": "P016",
+      "name": "Sharath Sollekattu S",
+      "matches": 5,
+      "innings": 5,
+      "total_runs": 31,
+      "highest_score": 12,
+      "fours": 0,
+      "sixes": 6,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 6.2
     },
     {
       "player_id": "P017",
       "name": "Hruthik K",
-      "matches": 3,
-      "innings": 3,
-      "total_runs": 24,
+      "matches": 4,
+      "innings": 4,
+      "total_runs": 27,
       "highest_score": 20,
       "fours": 0,
       "sixes": 3,
@@ -200,164 +200,164 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 8.0
+      "all_rounder_rating": 6.75
     },
     {
       "player_id": "P018",
       "name": "Prathik",
-      "matches": 4,
-      "innings": 4,
-      "total_runs": 16,
-      "highest_score": 15,
-      "fours": 0,
-      "sixes": 2,
-      "bowling_overs": 7.4,
-      "wickets": 5,
-      "best_spell": "3-5",
+      "matches": 9,
+      "innings": 9,
+      "total_runs": 58,
+      "highest_score": 16,
+      "fours": 4,
+      "sixes": 8,
+      "bowling_overs": 21.4,
+      "wickets": 16,
+      "best_spell": "4-15",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 10.96
+      "all_rounder_rating": 16.56
     },
     {
       "player_id": "P019",
       "name": "Sathish Banna",
-      "matches": 7,
-      "innings": 7,
-      "total_runs": 30,
-      "highest_score": 12,
-      "fours": 0,
-      "sixes": 1,
-      "bowling_overs": 16.0,
-      "wickets": 7,
+      "matches": 13,
+      "innings": 13,
+      "total_runs": 70,
+      "highest_score": 19,
+      "fours": 1,
+      "sixes": 2,
+      "bowling_overs": 29.0,
+      "wickets": 14,
       "best_spell": "3-18",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 8.28
+      "all_rounder_rating": 10.77
     },
     {
       "player_id": "P020",
       "name": "Sadananda",
-      "matches": 8,
-      "innings": 8,
-      "total_runs": 37,
+      "matches": 13,
+      "innings": 13,
+      "total_runs": 59,
       "highest_score": 14,
       "fours": 0,
-      "sixes": 1,
-      "bowling_overs": 8.0,
+      "sixes": 2,
+      "bowling_overs": 8.4,
       "wickets": 4,
       "best_spell": "2-41",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 9.62
+      "all_rounder_rating": 9.46
     },
     {
       "player_id": "P021",
       "name": "Vijay Sural",
-      "matches": 9,
-      "innings": 9,
-      "total_runs": 66,
+      "matches": 15,
+      "innings": 15,
+      "total_runs": 93,
       "highest_score": 27,
       "fours": 5,
-      "sixes": 7,
-      "bowling_overs": 17.0,
-      "wickets": 11,
-      "best_spell": "3-10",
+      "sixes": 9,
+      "bowling_overs": 32.0,
+      "wickets": 17,
+      "best_spell": "3-5",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 12.89
+      "all_rounder_rating": 11.47
     },
     {
       "player_id": "P022",
       "name": "Karthik Image",
-      "matches": 4,
-      "innings": 4,
-      "total_runs": 2,
-      "highest_score": 2,
-      "fours": 0,
-      "sixes": 0,
-      "bowling_overs": 4.0,
+      "matches": 9,
+      "innings": 9,
+      "total_runs": 56,
+      "highest_score": 18,
+      "fours": 2,
+      "sixes": 3,
+      "bowling_overs": 6.0,
       "wickets": 2,
       "best_spell": "1-12",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 5.5
+      "all_rounder_rating": 6.22
     },
     {
       "player_id": "P023",
       "name": "Rakshi S",
-      "matches": 8,
-      "innings": 7,
-      "total_runs": 37,
+      "matches": 15,
+      "innings": 14,
+      "total_runs": 46,
       "highest_score": 18,
       "fours": 0,
       "sixes": 2,
-      "bowling_overs": 20.3,
-      "wickets": 7,
-      "best_spell": "2-15",
+      "bowling_overs": 38.3,
+      "wickets": 13,
+      "best_spell": "2-10",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 6.8
+      "all_rounder_rating": 7.07
     },
     {
       "player_id": "P024",
-      "name": "Shashank",
-      "matches": 8,
-      "innings": 8,
-      "total_runs": 68,
-      "highest_score": 31,
-      "fours": 2,
-      "sixes": 3,
-      "bowling_overs": 20.0,
-      "wickets": 14,
+      "name": "shashank",
+      "matches": 15,
+      "innings": 13,
+      "total_runs": 218,
+      "highest_score": 85,
+      "fours": 10,
+      "sixes": 18,
+      "bowling_overs": 29.0,
+      "wickets": 17,
       "best_spell": "2-2",
       "profile_image_url": "images/Shashank.jpg",
-      "all_rounder_rating": 13.0
+      "all_rounder_rating": 15.67
     },
     {
       "player_id": "P025",
       "name": "Shriharsha",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 31,
+      "matches": 11,
+      "innings": 11,
+      "total_runs": 71,
       "highest_score": 15,
-      "fours": 0,
-      "sixes": 3,
-      "bowling_overs": 4.5,
+      "fours": 2,
+      "sixes": 4,
+      "bowling_overs": 8.5,
       "wickets": 5,
       "best_spell": "2-5",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 12.98
+      "all_rounder_rating": 8.73
     },
     {
       "player_id": "P026",
       "name": "Kathi S",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 11,
-      "highest_score": 7,
-      "fours": 0,
-      "sixes": 1,
-      "bowling_overs": 7.4,
-      "wickets": 8,
+      "matches": 11,
+      "innings": 11,
+      "total_runs": 47,
+      "highest_score": 14,
+      "fours": 2,
+      "sixes": 2,
+      "bowling_overs": 19.4,
+      "wickets": 10,
       "best_spell": "3-2",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 13.92
+      "all_rounder_rating": 9.73
     },
     {
       "player_id": "P027",
       "name": "Ganesh P",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 33,
+      "matches": 6,
+      "innings": 6,
+      "total_runs": 39,
       "highest_score": 12,
-      "fours": 3,
+      "fours": 4,
       "sixes": 2,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/ganesh RTO.jpg",
-      "all_rounder_rating": 6.6
+      "all_rounder_rating": 6.5
     },
     {
       "player_id": "P028",
       "name": "Sumanth S",
-      "matches": 2,
-      "innings": 2,
-      "total_runs": 3,
+      "matches": 3,
+      "innings": 3,
+      "total_runs": 6,
       "highest_score": 3,
       "fours": 0,
       "sixes": 0,
@@ -365,14 +365,14 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 1.5
+      "all_rounder_rating": 2.0
     },
     {
       "player_id": "P029",
       "name": "Nishan Gunda",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 7,
+      "matches": 10,
+      "innings": 10,
+      "total_runs": 11,
       "highest_score": 3,
       "fours": 0,
       "sixes": 0,
@@ -380,7 +380,7 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 1.4
+      "all_rounder_rating": 1.1
     },
     {
       "player_id": "P030",
@@ -415,23 +415,23 @@
     {
       "player_id": "P032",
       "name": "Rakshith B",
-      "matches": 5,
-      "innings": 5,
-      "total_runs": 14,
+      "matches": 7,
+      "innings": 7,
+      "total_runs": 19,
       "highest_score": 9,
-      "fours": 1,
+      "fours": 2,
       "sixes": 0,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 2.8
+      "all_rounder_rating": 2.71
     },
     {
       "player_id": "P033",
       "name": "Gautham GH",
-      "matches": 2,
-      "innings": 2,
+      "matches": 3,
+      "innings": 3,
       "total_runs": 1,
       "highest_score": 1,
       "fours": 0,
@@ -440,7 +440,7 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.5
+      "all_rounder_rating": 0.33
     },
     {
       "player_id": "P034",
@@ -460,22 +460,22 @@
     {
       "player_id": "P035",
       "name": "Niru Sooralu",
-      "matches": 1,
-      "innings": 1,
-      "total_runs": 0,
-      "highest_score": 0,
+      "matches": 2,
+      "innings": 2,
+      "total_runs": 4,
+      "highest_score": 4,
       "fours": 0,
       "sixes": 0,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.0
+      "all_rounder_rating": 2.0
     },
     {
       "player_id": "P036",
       "name": "Jayanth S",
-      "matches": 3,
+      "matches": 4,
       "innings": 2,
       "total_runs": 1,
       "highest_score": 1,
@@ -485,22 +485,22 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.5
+      "all_rounder_rating": 0.25
     },
     {
       "player_id": "P037",
       "name": "Poornesh S",
-      "matches": 5,
-      "innings": 4,
-      "total_runs": 3,
-      "highest_score": 2,
+      "matches": 6,
+      "innings": 5,
+      "total_runs": 6,
+      "highest_score": 3,
       "fours": 0,
       "sixes": 0,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.75
+      "all_rounder_rating": 1.0
     },
     {
       "player_id": "P038",
@@ -520,24 +520,24 @@
     {
       "player_id": "P039",
       "name": "Sannidhi S",
-      "matches": 3,
-      "innings": 3,
+      "matches": 4,
+      "innings": 4,
       "total_runs": 4,
       "highest_score": 2,
       "fours": 0,
       "sixes": 0,
-      "bowling_overs": 4.0,
-      "wickets": 0,
-      "best_spell": "0-25",
+      "bowling_overs": 6.0,
+      "wickets": 1,
+      "best_spell": "1-14",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 1.33
+      "all_rounder_rating": 1.5
     },
     {
       "player_id": "P040",
       "name": "Ajith A J",
-      "matches": 3,
-      "innings": 3,
-      "total_runs": 36,
+      "matches": 7,
+      "innings": 7,
+      "total_runs": 44,
       "highest_score": 36,
       "fours": 3,
       "sixes": 2,
@@ -545,37 +545,37 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/Ajith AJ.jpg",
-      "all_rounder_rating": 12.0
+      "all_rounder_rating": 6.29
     },
     {
       "player_id": "P041",
       "name": "Dileep Sural",
-      "matches": 3,
-      "innings": 3,
-      "total_runs": 25,
+      "matches": 7,
+      "innings": 7,
+      "total_runs": 26,
       "highest_score": 18,
       "fours": 0,
       "sixes": 1,
-      "bowling_overs": 7.0,
-      "wickets": 4,
+      "bowling_overs": 15.0,
+      "wickets": 5,
       "best_spell": "2-19",
       "profile_image_url": "images/Dileep.jpg",
-      "all_rounder_rating": 13.09
+      "all_rounder_rating": 7.43
     },
     {
       "player_id": "P042",
       "name": "Sunil Sural",
-      "matches": 3,
-      "innings": 3,
-      "total_runs": 16,
-      "highest_score": 9,
+      "matches": 7,
+      "innings": 7,
+      "total_runs": 32,
+      "highest_score": 11,
       "fours": 0,
-      "sixes": 1,
+      "sixes": 2,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 5.33
+      "all_rounder_rating": 4.57
     },
     {
       "player_id": "P043",
@@ -639,18 +639,18 @@
     },
     {
       "player_id": "P047",
-      "name": "Pacha S",
-      "matches": 4,
-      "innings": 4,
-      "total_runs": 42,
+      "name": "Pachu P",
+      "matches": 8,
+      "innings": 6,
+      "total_runs": 64,
       "highest_score": 20,
-      "fours": 0,
-      "sixes": 3,
-      "bowling_overs": 5.0,
-      "wickets": 2,
-      "best_spell": "1-4",
+      "fours": 1,
+      "sixes": 5,
+      "bowling_overs": 13.0,
+      "wickets": 8,
+      "best_spell": "3-13",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 12.5
+      "all_rounder_rating": 11.25
     },
     {
       "player_id": "P048",
@@ -670,17 +670,17 @@
     {
       "player_id": "P049",
       "name": "Prasanna Gunda",
-      "matches": 1,
-      "innings": 1,
-      "total_runs": 0,
-      "highest_score": 0,
+      "matches": 4,
+      "innings": 4,
+      "total_runs": 2,
+      "highest_score": 1,
       "fours": 0,
       "sixes": 0,
-      "bowling_overs": 1.0,
+      "bowling_overs": 2.0,
       "wickets": 1,
       "best_spell": "1-4",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 10.0
+      "all_rounder_rating": 3.75
     },
     {
       "player_id": "P050",
@@ -700,32 +700,32 @@
     {
       "player_id": "P051",
       "name": "Amith S",
-      "matches": 2,
-      "innings": 2,
-      "total_runs": 27,
+      "matches": 6,
+      "innings": 6,
+      "total_runs": 44,
       "highest_score": 17,
       "fours": 1,
-      "sixes": 1,
+      "sixes": 2,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/Amith s.jpg",
-      "all_rounder_rating": 13.5
+      "all_rounder_rating": 7.33
     },
     {
       "player_id": "P052",
       "name": "Sathish Pillu",
-      "matches": 2,
-      "innings": 2,
-      "total_runs": 8,
-      "highest_score": 7,
-      "fours": 0,
+      "matches": 6,
+      "innings": 6,
+      "total_runs": 26,
+      "highest_score": 14,
+      "fours": 3,
       "sixes": 0,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 4.0
+      "all_rounder_rating": 4.33
     },
     {
       "player_id": "P053",
@@ -745,17 +745,17 @@
     {
       "player_id": "P054",
       "name": "Preetham",
-      "matches": 1,
-      "innings": 0,
-      "total_runs": 0,
-      "highest_score": 0,
+      "matches": 2,
+      "innings": 1,
+      "total_runs": 3,
+      "highest_score": 3,
       "fours": 0,
       "sixes": 0,
       "bowling_overs": 0.0,
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.0
+      "all_rounder_rating": 1.5
     },
     {
       "player_id": "P055",
@@ -775,24 +775,24 @@
     {
       "player_id": "P056",
       "name": "Ganesh B Sural",
-      "matches": 2,
-      "innings": 2,
-      "total_runs": 2,
-      "highest_score": 2,
-      "fours": 0,
+      "matches": 4,
+      "innings": 4,
+      "total_runs": 7,
+      "highest_score": 5,
+      "fours": 1,
       "sixes": 0,
       "bowling_overs": 0.1,
       "wickets": 0,
       "best_spell": "0-6",
       "profile_image_url": "images/Ganesh.jpg",
-      "all_rounder_rating": 1.0
+      "all_rounder_rating": 1.75
     },
     {
       "player_id": "P057",
       "name": "VASU Nilavara",
-      "matches": 2,
-      "innings": 2,
-      "total_runs": 6,
+      "matches": 3,
+      "innings": 3,
+      "total_runs": 7,
       "highest_score": 6,
       "fours": 0,
       "sixes": 0,
@@ -800,7 +800,7 @@
       "wickets": 0,
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 3.0
+      "all_rounder_rating": 2.33
     },
     {
       "player_id": "P058",
@@ -865,7 +865,7 @@
     {
       "player_id": "P062",
       "name": "Prathyak",
-      "matches": 0,
+      "matches": 1,
       "innings": 0,
       "total_runs": 0,
       "highest_score": 0,
@@ -880,6 +880,66 @@
     {
       "player_id": "P063",
       "name": "Sachin Sachu",
+      "matches": 3,
+      "innings": 3,
+      "total_runs": 13,
+      "highest_score": 9,
+      "fours": 1,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 4.33
+    },
+    {
+      "player_id": "P064",
+      "name": "Yashu Sooral",
+      "matches": 2,
+      "innings": 2,
+      "total_runs": 4,
+      "highest_score": 4,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 2.0
+    },
+    {
+      "player_id": "P065",
+      "name": "Surendra Shetty",
+      "matches": 3,
+      "innings": 2,
+      "total_runs": 1,
+      "highest_score": 1,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 4.2,
+      "wickets": 2,
+      "best_spell": "2-10",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 2.5
+    },
+    {
+      "player_id": "P066",
+      "name": "Naveen Naveen",
+      "matches": 3,
+      "innings": 3,
+      "total_runs": 40,
+      "highest_score": 21,
+      "fours": 1,
+      "sixes": 4,
+      "bowling_overs": 3.0,
+      "wickets": 1,
+      "best_spell": "1-18",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 10.33
+    },
+    {
+      "player_id": "P067",
+      "name": "Sagar S",
       "matches": 1,
       "innings": 1,
       "total_runs": 1,
@@ -891,6 +951,141 @@
       "best_spell": "0-0",
       "profile_image_url": "images/default_player.jpg",
       "all_rounder_rating": 1.0
+    },
+    {
+      "player_id": "P068",
+      "name": "Deepak",
+      "matches": 2,
+      "innings": 2,
+      "total_runs": 11,
+      "highest_score": 6,
+      "fours": 0,
+      "sixes": 1,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 5.5
+    },
+    {
+      "player_id": "P069",
+      "name": "Bullu",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/Bulli.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P070",
+      "name": "Sandeep",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P071",
+      "name": "Santhosh Kumar",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P072",
+      "name": "Ganga",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P073",
+      "name": "Ranju Jeddinsalu",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P074",
+      "name": "Jnanesh",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P075",
+      "name": "Amith",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
+    },
+    {
+      "player_id": "P076",
+      "name": "Anand Sooral",
+      "matches": 0,
+      "innings": 0,
+      "total_runs": 0,
+      "highest_score": 0,
+      "fours": 0,
+      "sixes": 0,
+      "bowling_overs": 0.0,
+      "wickets": 0,
+      "best_spell": "0-0",
+      "profile_image_url": "images/default_player.jpg",
+      "all_rounder_rating": 0.0
     }
   ],
   "tournaments": [
@@ -3737,6 +3932,1357 @@
                   "runs": 3,
                   "wickets": 2,
                   "maidens": 0
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "SPL - Season 4 (2023)",
+      "matches": [
+        {
+          "match_id": "M401",
+          "teams": [
+            "Sooral Bulls",
+            "Sooral Sixers"
+          ],
+          "winner": "Sooral Bulls",
+          "man_of_the_match": "Sharath Sooral (34 runs and 2 wickets)",
+          "scorecard_summary": "Sooral Bulls won by 9 runs.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Bulls won by 9 runs.",
+            "innings1": {
+              "batting_team": "Sooral Bulls",
+              "score": "74/6 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "runs": 34,
+                  "balls": 27,
+                  "fours": 1,
+                  "sixes": 3,
+                  "status": "b Pachu P"
+                },
+                {
+                  "name": "Ajith A J",
+                  "runs": 3,
+                  "balls": 7,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Kathi S b Pachu P"
+                },
+                {
+                  "name": "Sathish Banna",
+                  "runs": 8,
+                  "balls": 11,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Pachu P b Naveen Naveen"
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "runs": 11,
+                  "balls": 11,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "c Pachu P b Kathi S"
+                },
+                {
+                  "name": "Dileep Sural",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c †Naveen Naveen b Pachu P"
+                },
+                {
+                  "name": "Sunil Sural",
+                  "runs": 3,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Mahendra Kali / Kathi S"
+                },
+                {
+                  "name": "Nishan Gunda",
+                  "runs": 0,
+                  "balls": 0,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Sagar S",
+                  "runs": 1,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Prajwal Devadiga",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 14,
+                  "wickets": 0
+                },
+                {
+                  "name": "Pachu P",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 13,
+                  "wickets": 3
+                },
+                {
+                  "name": "Kathi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 29,
+                  "wickets": 1
+                },
+                {
+                  "name": "Naveen Naveen",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 18,
+                  "wickets": 1
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Sooral Sixers",
+              "score": "65/6 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sadananda",
+                  "runs": 4,
+                  "balls": 7,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sathish Pillu b Sharath Sooral"
+                },
+                {
+                  "name": "Naveen Naveen",
+                  "runs": 14,
+                  "balls": 5,
+                  "fours": 0,
+                  "sixes": 2,
+                  "status": "c&b Sharath Sooral"
+                },
+                {
+                  "name": "Prajwal Devadiga",
+                  "runs": 6,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "b Ranjith Serigara"
+                },
+                {
+                  "name": "Mahendra Kali",
+                  "runs": 8,
+                  "balls": 15,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Sathish Banna"
+                },
+                {
+                  "name": "Kathi S",
+                  "runs": 14,
+                  "balls": 17,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "c Dileep Sural b Sathish Banna"
+                },
+                {
+                  "name": "Pachu P",
+                  "runs": 1,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out † Ajith A J / Sathish Banna"
+                },
+                {
+                  "name": "Sachin Sachu",
+                  "runs": 9,
+                  "balls": 10,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Gautham GH",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Sathish Banna",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 20,
+                  "wickets": 2
+                },
+                {
+                  "name": "Sharath Sooral",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 22,
+                  "wickets": 2
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 13,
+                  "wickets": 1
+                },
+                {
+                  "name": "Dileep Sural",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 10,
+                  "wickets": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M402",
+          "teams": [
+            "Sooral Warriors",
+            "Kings Sooral"
+          ],
+          "winner": "Kings Sooral",
+          "man_of_the_match": "Prathik (4 wickets for 15 runs)",
+          "scorecard_summary": "Kings Sooral won by 9 wickets.",
+          "detailed_scorecard": {
+            "result_summary": "Kings Sooral won by 9 wickets.",
+            "innings1": {
+              "batting_team": "Sooral Warriors",
+              "score": "29/10 (8.1 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Rakshi S",
+                  "runs": 0,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Vijay Sural"
+                },
+                {
+                  "name": "Prasanna Gunda",
+                  "runs": 1,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Prathik"
+                },
+                {
+                  "name": "shashank",
+                  "runs": 0,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Jayanth S / Vijay Sural"
+                },
+                {
+                  "name": "Rakshith B",
+                  "runs": 5,
+                  "balls": 5,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "c Surendra Shetty b Vijay Sural"
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "runs": 1,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Vijay Sural"
+                },
+                {
+                  "name": "Shriharsha",
+                  "runs": 2,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Vijay Sural b Prathik"
+                },
+                {
+                  "name": "Ganesh B Sural",
+                  "runs": 0,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Prathik"
+                },
+                {
+                  "name": "VASU Nilavara",
+                  "runs": 1,
+                  "balls": 5,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Yashu Sooral b Prathik"
+                },
+                {
+                  "name": "Shrisha Devadiga",
+                  "runs": 1,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Ajith Mogaveera"
+                },
+                {
+                  "name": "Niru Sooralu",
+                  "runs": 4,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Preetham",
+                  "runs": 3,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Ajith Mogaveera"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Vijay Sural",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 5,
+                  "wickets": 3
+                },
+                {
+                  "name": "Prathik",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 15,
+                  "wickets": 4
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "overs": 1.1,
+                  "maidens": 0,
+                  "runs": 4,
+                  "wickets": 2
+                },
+                {
+                  "name": "Surendra Shetty",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 5,
+                  "wickets": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Kings Sooral",
+              "score": "32/1 (2.2 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Prathik",
+                  "runs": 16,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 2,
+                  "status": "not out"
+                },
+                {
+                  "name": "Karthik Image",
+                  "runs": 9,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "b Rakshi S"
+                },
+                {
+                  "name": "Nithin S",
+                  "runs": 4,
+                  "balls": 2,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "shashank",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 18,
+                  "wickets": 0
+                },
+                {
+                  "name": "Rakshi S",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 9,
+                  "wickets": 1
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "overs": 0.2,
+                  "maidens": 0,
+                  "runs": 5,
+                  "wickets": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M403",
+          "teams": [
+            "Sooral Bulls",
+            "Kings Sooral"
+          ],
+          "winner": "Sooral Bulls",
+          "man_of_the_match": "Sathish Banna (3 wickets for 21 runs)",
+          "scorecard_summary": "Sooral Bulls won by 4 runs.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Bulls won by 4 runs.",
+            "innings1": {
+              "batting_team": "Sooral Bulls",
+              "score": "63/7 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "runs": 19,
+                  "balls": 16,
+                  "fours": 0,
+                  "sixes": 2,
+                  "status": "run out Amith S / Vijay Sural"
+                },
+                {
+                  "name": "Ajith A J",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c&b Prathik"
+                },
+                {
+                  "name": "Sathish Banna",
+                  "runs": 0,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Prathik"
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "runs": 0,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Nithin S b Prathik"
+                },
+                {
+                  "name": "Nishan Gunda",
+                  "runs": 1,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Vijay Sural"
+                },
+                {
+                  "name": "Sunil Sural",
+                  "runs": 11,
+                  "balls": 10,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "not out"
+                },
+                {
+                  "name": "Dileep Sural",
+                  "runs": 0,
+                  "balls": 0,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Karthik Image"
+                },
+                {
+                  "name": "Sathish Pillu",
+                  "runs": 14,
+                  "balls": 17,
+                  "fours": 2,
+                  "sixes": 0,
+                  "status": "c Yashu Sooral b Sannidhi S"
+                },
+                {
+                  "name": "Deepak",
+                  "runs": 5,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Vijay Sural",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 9,
+                  "wickets": 1
+                },
+                {
+                  "name": "Prathik",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 9,
+                  "wickets": 3
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 31,
+                  "wickets": 0
+                },
+                {
+                  "name": "Sannidhi S",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 14,
+                  "wickets": 1
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Kings Sooral",
+              "score": "59/6 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Prathik",
+                  "runs": 11,
+                  "balls": 8,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "c Ajith A J b Ranjith Serigara"
+                },
+                {
+                  "name": "Amith S",
+                  "runs": 1,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Sathish Banna"
+                },
+                {
+                  "name": "Vijay Sural",
+                  "runs": 7,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "c Ajith A J b Sharath Sooral"
+                },
+                {
+                  "name": "Karthik Image",
+                  "runs": 18,
+                  "balls": 26,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "not out"
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "runs": 5,
+                  "balls": 7,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Dileep Sural b Sathish Banna"
+                },
+                {
+                  "name": "Nithin S",
+                  "runs": 7,
+                  "balls": 5,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "c&b Sathish Banna"
+                },
+                {
+                  "name": "Yashu Sooral",
+                  "runs": 4,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c&b Dileep Sural"
+                },
+                {
+                  "name": "Sannidhi S",
+                  "runs": 0,
+                  "balls": 0,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 20,
+                  "wickets": 1
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 7,
+                  "wickets": 1
+                },
+                {
+                  "name": "Sathish Banna",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 21,
+                  "wickets": 3
+                },
+                {
+                  "name": "Dileep Sural",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 11,
+                  "wickets": 1
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M404",
+          "teams": [
+            "Sooral Sixers",
+            "Sooral Warriors"
+          ],
+          "winner": "Sooral Warriors",
+          "man_of_the_match": "shashank (51 runs and 1 wicket)",
+          "scorecard_summary": "Sooral Warriors won by 5 wickets.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Warriors won by 5 wickets.",
+            "innings1": {
+              "batting_team": "Sooral Sixers",
+              "score": "81/2 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Mahendra Kali",
+                  "runs": 41,
+                  "balls": 35,
+                  "fours": 1,
+                  "sixes": 4,
+                  "status": "not out"
+                },
+                {
+                  "name": "Prajwal Devadiga",
+                  "runs": 25,
+                  "balls": 21,
+                  "fours": 0,
+                  "sixes": 3,
+                  "status": "c Shriharsha b shashank"
+                },
+                {
+                  "name": "Naveen Naveen",
+                  "runs": 5,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Prasanna Gunda / Prathyak"
+                },
+                {
+                  "name": "Sadananda",
+                  "runs": 0,
+                  "balls": 0,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Rakshi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 15,
+                  "wickets": 0
+                },
+                {
+                  "name": "Shrisha Devadiga",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 21,
+                  "wickets": 0
+                },
+                {
+                  "name": "shashank",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 19,
+                  "wickets": 1
+                },
+                {
+                  "name": "Prasanna Gunda",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 14,
+                  "wickets": 0
+                },
+                {
+                  "name": "Shriharsha",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 12,
+                  "wickets": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Sooral Warriors",
+              "score": "83/5 (9.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "shashank",
+                  "runs": 51,
+                  "balls": 33,
+                  "fours": 2,
+                  "sixes": 4,
+                  "status": "not out"
+                },
+                {
+                  "name": "Rakshith B",
+                  "runs": 0,
+                  "balls": 0,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Sachin Sachu / † Naveen Naveen"
+                },
+                {
+                  "name": "Shrisha Devadiga",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sachin Sachu b Prajwal Devadiga"
+                },
+                {
+                  "name": "Shriharsha",
+                  "runs": 11,
+                  "balls": 8,
+                  "fours": 2,
+                  "sixes": 0,
+                  "status": "c Kathi S b Pachu P"
+                },
+                {
+                  "name": "Rakshi S",
+                  "runs": 3,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Pachu P"
+                },
+                {
+                  "name": "Prasanna Gunda",
+                  "runs": 1,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c&b Kathi S"
+                },
+                {
+                  "name": "Ganesh B Sural",
+                  "runs": 5,
+                  "balls": 6,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Prajwal Devadiga",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 24,
+                  "wickets": 1
+                },
+                {
+                  "name": "Naveen Naveen",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 24,
+                  "wickets": 0
+                },
+                {
+                  "name": "Pachu P",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 14,
+                  "wickets": 2
+                },
+                {
+                  "name": "Kathi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 21,
+                  "wickets": 1
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M405",
+          "teams": [
+            "Sooral Sixers",
+            "Kings Sooral"
+          ],
+          "winner": "Kings Sooral",
+          "man_of_the_match": "Ajith Mogaveera (33 runs and 1 wicket)",
+          "scorecard_summary": "Kings Sooral won by 8 wickets.",
+          "detailed_scorecard": {
+            "result_summary": "Kings Sooral won by 8 wickets.",
+            "innings1": {
+              "batting_team": "Sooral Sixers",
+              "score": "74/6 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Naveen Naveen",
+                  "runs": 21,
+                  "balls": 21,
+                  "fours": 1,
+                  "sixes": 2,
+                  "status": "b Vijay Sural"
+                },
+                {
+                  "name": "Prajwal Devadiga",
+                  "runs": 13,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 2,
+                  "status": "c †Nithin S b Prathik"
+                },
+                {
+                  "name": "Pachu P",
+                  "runs": 20,
+                  "balls": 17,
+                  "fours": 1,
+                  "sixes": 2,
+                  "status": "not out"
+                },
+                {
+                  "name": "Mahendra Kali",
+                  "runs": 1,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Prathik b Surendra Shetty"
+                },
+                {
+                  "name": "Sadananda",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Prathik b Surendra Shetty"
+                },
+                {
+                  "name": "Kathi S",
+                  "runs": 8,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "c Yashu Sooral b Ajith Mogaveera"
+                },
+                {
+                  "name": "Sachin Sachu",
+                  "runs": 3,
+                  "balls": 5,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out † Nithin S"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Vijay Sural",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 32,
+                  "wickets": 1
+                },
+                {
+                  "name": "Prathik",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 19,
+                  "wickets": 1
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 13,
+                  "wickets": 1
+                },
+                {
+                  "name": "Surendra Shetty",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 10,
+                  "wickets": 2
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Kings Sooral",
+              "score": "80/2 (7.4 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Prathik",
+                  "runs": 15,
+                  "balls": 9,
+                  "fours": 2,
+                  "sixes": 1,
+                  "status": "c Pachu P b Prajwal Devadiga"
+                },
+                {
+                  "name": "Amith S",
+                  "runs": 13,
+                  "balls": 14,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "b Kathi S"
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "runs": 33,
+                  "balls": 20,
+                  "fours": 2,
+                  "sixes": 3,
+                  "status": "not out"
+                },
+                {
+                  "name": "Vijay Sural",
+                  "runs": 9,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Prajwal Devadiga",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 23,
+                  "wickets": 1
+                },
+                {
+                  "name": "Kathi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 26,
+                  "wickets": 1
+                },
+                {
+                  "name": "Pachu P",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 11,
+                  "wickets": 0
+                },
+                {
+                  "name": "Sadananda",
+                  "overs": 0.4,
+                  "maidens": 0,
+                  "runs": 20,
+                  "wickets": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M406",
+          "teams": [
+            "Sooral Warriors",
+            "Sooral Bulls"
+          ],
+          "winner": "Sooral Warriors",
+          "man_of_the_match": "shashank (85 runs and 0 wickets)",
+          "scorecard_summary": "Sooral Warriors won by 86 runs.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Warriors won by 86 runs.",
+            "innings1": {
+              "batting_team": "Sooral Warriors",
+              "score": "137/1 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "shashank",
+                  "runs": 85,
+                  "balls": 29,
+                  "fours": 3,
+                  "sixes": 11,
+                  "status": "c Nishan Gunda b Sharath Sooral"
+                },
+                {
+                  "name": "Shriharsha",
+                  "runs": 21,
+                  "balls": 21,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "not out"
+                },
+                {
+                  "name": "Rakshi S",
+                  "runs": 23,
+                  "balls": 11,
+                  "fours": 0,
+                  "sixes": 3,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 28,
+                  "wickets": 1
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 38,
+                  "wickets": 0
+                },
+                {
+                  "name": "Sathish Banna",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 34,
+                  "wickets": 0
+                },
+                {
+                  "name": "Dileep Sural",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 37,
+                  "wickets": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Sooral Bulls",
+              "score": "51/6 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "runs": 3,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Raghavendra"
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "runs": 0,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Rakshi S"
+                },
+                {
+                  "name": "Sunil Sural",
+                  "runs": 2,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out VASU Nilavara"
+                },
+                {
+                  "name": "Sathish Banna",
+                  "runs": 19,
+                  "balls": 29,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "not out"
+                },
+                {
+                  "name": "Sathish Pillu",
+                  "runs": 4,
+                  "balls": 6,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "c shashank b Rakshi S"
+                },
+                {
+                  "name": "Ajith A J",
+                  "runs": 2,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Raghavendra"
+                },
+                {
+                  "name": "Dileep Sural",
+                  "runs": 1,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Rakesh Sooral b Raghavendra"
+                },
+                {
+                  "name": "Deepak",
+                  "runs": 6,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 1,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Rakshi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 10,
+                  "wickets": 2
+                },
+                {
+                  "name": "Raghavendra",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 9,
+                  "wickets": 3
+                },
+                {
+                  "name": "Shrisha Devadiga",
+                  "overs": 2,
+                  "maidens": 1,
+                  "runs": 7,
+                  "wickets": 0
+                },
+                {
+                  "name": "shashank",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 9,
+                  "wickets": 0
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 16,
+                  "wickets": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match_id": "M407",
+          "teams": [
+            "Kings Sooral",
+            "Sooral Warriors"
+          ],
+          "winner": "Sooral Warriors",
+          "man_of_the_match": "shashank (58 runs and 1 wicket)",
+          "scorecard_summary": "Sooral Warriors won by 9 wickets.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Warriors won by 9 wickets.",
+            "innings1": {
+              "batting_team": "Kings Sooral",
+              "score": "75/7 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Prathik",
+                  "runs": 28,
+                  "balls": 20,
+                  "fours": 2,
+                  "sixes": 3,
+                  "status": "b shashank"
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "runs": 28,
+                  "balls": 18,
+                  "fours": 0,
+                  "sixes": 4,
+                  "status": "c Shrisha Devadiga b Raghavendra"
+                },
+                {
+                  "name": "Amith S",
+                  "runs": 3,
+                  "balls": 7,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Raghavendra b Shrisha Devadiga"
+                },
+                {
+                  "name": "Vijay Sural",
+                  "runs": 2,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Shrisha Devadiga b Raghavendra"
+                },
+                {
+                  "name": "Nithin S",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Shrisha Devadiga"
+                },
+                {
+                  "name": "Surendra Shetty",
+                  "runs": 1,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out Prasanna Gunda / Shriharsha"
+                },
+                {
+                  "name": "Jayanth S",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Shrisha Devadiga"
+                },
+                {
+                  "name": "POORNESH S",
+                  "runs": 3,
+                  "balls": 10,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Yashu Sooral",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Rakshi S",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 10,
+                  "wickets": 0
+                },
+                {
+                  "name": "Shrisha Devadiga",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 18,
+                  "wickets": 3
+                },
+                {
+                  "name": "Raghavendra",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 21,
+                  "wickets": 2
+                },
+                {
+                  "name": "shashank",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 20,
+                  "wickets": 1
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "overs": 1,
+                  "maidens": 0,
+                  "runs": 6,
+                  "wickets": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Sooral Warriors",
+              "score": "76/1 (9.2 Ov)",
+              "batting_stats": [
+                {
+                  "name": "shashank",
+                  "runs": 58,
+                  "balls": 35,
+                  "fours": 5,
+                  "sixes": 4,
+                  "status": "not out"
+                },
+                {
+                  "name": "Shriharsha",
+                  "runs": 3,
+                  "balls": 13,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Prathik b Ajith Mogaveera"
+                },
+                {
+                  "name": "Rakshi S",
+                  "runs": 6,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Vijay Sural",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 21,
+                  "wickets": 0
+                },
+                {
+                  "name": "Prathik",
+                  "overs": 3,
+                  "maidens": 0,
+                  "runs": 19,
+                  "wickets": 0
+                },
+                {
+                  "name": "Ajith Mogaveera",
+                  "overs": 2,
+                  "maidens": 0,
+                  "runs": 29,
+                  "wickets": 1
+                },
+                {
+                  "name": "Surendra Shetty",
+                  "overs": 1.2,
+                  "maidens": 0,
+                  "runs": 7,
+                  "wickets": 0
                 }
               ]
             }
