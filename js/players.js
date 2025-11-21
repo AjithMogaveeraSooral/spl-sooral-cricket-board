@@ -1,23 +1,17 @@
 let allPlayersData = [];
 let rankedPlayersData = [];
 
-// --- RANKING CALCULATION LOGIC ---
 
 function calculateRanks(players) {
-    // 1. Sort for Batting Rank (Total Runs)
     const battingSorted = [...players].sort((a, b) => b.total_runs - a.total_runs);
-    // ... (rest of the ranking logic remains the same)
     const battingMap = new Map(battingSorted.map((player, index) => [player.player_id, index + 1]));
 
-    // 2. Sort for Bowling Rank (Total Wickets)
     const bowlingSorted = [...players].sort((a, b) => b.wickets - a.wickets);
     const bowlingMap = new Map(bowlingSorted.map((player, index) => [player.player_id, index + 1]));
 
-    // 3. Sort for All-rounder Rank (All-rounder Rating)
     const allrounderSorted = [...players].sort((a, b) => b.all_rounder_rating - a.all_rounder_rating);
     const allrounderMap = new Map(allrounderSorted.map((player, index) => [player.player_id, index + 1]));
     
-    // Assign ranks back to the player objects
     return players.map(player => ({
         ...player,
         batting_rank: battingMap.get(player.player_id),
@@ -26,10 +20,8 @@ function calculateRanks(players) {
     }));
 }
 
-// --- NEW SORTING FUNCTION ---
 
 function sortPlayersByName(players) {
-    // Sorts players alphabetically by name (case-insensitive)
     return [...players].sort((a, b) => {
         const nameA = a.name.toUpperCase();
         const nameB = b.name.toUpperCase();
@@ -39,14 +31,10 @@ function sortPlayersByName(players) {
         if (nameA > nameB) {
             return 1;
         }
-        return 0; // names must be equal
+        return 0;
     });
 }
 
-
-// --- RENDERING LOGIC ---
-
-// Function to create an HTML card for a single player
 function createPlayerCard(player) {
     const imageUrl = player.profile_image_url || 'images/default_player.jpg';
     
@@ -87,40 +75,31 @@ function createPlayerCard(player) {
     `;
 }
 
-// Function to render the player cards to the DOM
 function renderPlayerCards(players) {
     const container = document.getElementById('player-cards-container');
     container.innerHTML = players.map(createPlayerCard).join('');
 }
 
-// Global function exposed to the HTML input (onkeyup) to filter players
 function filterPlayers() {
     const searchInput = document.getElementById('player-search');
     const searchTerm = searchInput.value.toLowerCase();
     
-    // Filter the ranked data array
     const filteredPlayers = rankedPlayersData.filter(player => 
         player.name.toLowerCase().includes(searchTerm)
     );
     
-    // Re-render only the filtered players
     renderPlayerCards(filteredPlayers);
 }
 
-// Main initialization function for the page
 async function initPlayerStats() {
-    // Assuming fetchSPLData() is defined elsewhere and returns the player data
     const data = await fetchSPLData(); 
     if (data && data.players) {
         allPlayersData = data.players;
         
-        // 1. Calculate ranks for all players
         let playersWithRanks = calculateRanks(allPlayersData);
         
-        // 2. Sort the ranked players alphabetically by name (NEW STEP)
         rankedPlayersData = sortPlayersByName(playersWithRanks);
         
-        // 3. Render the sorted, ranked players initially
         renderPlayerCards(rankedPlayersData); 
     }
 }

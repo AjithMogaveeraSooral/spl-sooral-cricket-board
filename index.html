@@ -6,7 +6,6 @@
     <title>Sooral Premier League - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Specific styling for the Home Page */
         #key-stats-container {
             display: flex;
             justify-content: space-around;
@@ -22,7 +21,6 @@
             margin-bottom: 5px;
         }
 
-        /* Leader Cards for Top Individual Stats */
         #leaders-container {
             display: flex;
             justify-content: space-between; 
@@ -46,7 +44,6 @@
             border-bottom: 2px solid rgba(2, 244, 212, 0.5);
         }
 
-        /* Ranking Lists */
         #ranking-container {
             display: flex; 
             justify-content: space-between; 
@@ -67,53 +64,42 @@
             margin-top: 0;
         }
 
-        /* * 📱 MOBILE RESPONSIVENESS 
-         * Changes for screens smaller than 768px (standard mobile/tablet breakpoint)
-         */
         @media (max-width: 768px) {
-            /* Adjust the key stats to stack vertically for better spacing */
             #key-stats-container {
                 flex-direction: column;
-                gap: 20px; /* Add vertical space between the stat items */
             }
 
-            /* Make the leader cards stack vertically and take up full width */
             #leaders-container {
                 flex-direction: column;
-                gap: 15px; /* Reduce gap slightly for mobile */
+                gap: 15px;
             }
             #leaders-container .player-card {
-                width: 100%; /* Take up the full width */
+                width: 100%;
             }
 
-            /* Make the Rank 1 holders stack vertically and take up full width */
             #rank-1-holders-container {
                 flex-direction: column;
                 gap: 15px;
             }
-            /* Target the inline style on the Rank 1 holder divs */
             #rank-1-holders-container > div {
-                 width: 100% !important; /* Override the inline style */
+                 width: 100% !important;
             }
             
-            /* Make the ranking lists stack vertically and take up full width */
             #ranking-container {
                 flex-direction: column;
                 gap: 15px;
             }
-            /* Target the inline style on the ranking list divs */
             #ranking-container > div {
-                width: 100% !important; /* Override the inline style */
+                width: 100% !important;
             }
             
-            /* Adjust the navigation to stack links vertically */
             header nav {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center links */
+                align-items: center; 
             }
             header nav a {
-                margin: 5px 0; /* Add vertical spacing between links */
+                margin: 5px 0;
             }
 
         }

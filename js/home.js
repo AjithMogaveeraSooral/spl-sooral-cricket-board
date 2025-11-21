@@ -1,10 +1,6 @@
-// Function to calculate all rankings (copied from players.js for consistency)
 function calculateRanks(players) {
-    // 1. Sort for Batting Rank (Total Runs)
     const battingSorted = [...players].sort((a, b) => b.total_runs - a.total_runs);
-    // 2. Sort for Bowling Rank (Total Wickets)
     const bowlingSorted = [...players].sort((a, b) => b.wickets - a.wickets);
-    // 3. Sort for All-rounder Rank (All-rounder Rating)
     const allrounderSorted = [...players].sort((a, b) => b.all_rounder_rating - a.all_rounder_rating);
     
     return {
@@ -26,7 +22,6 @@ async function initHomeStats() {
     const { topBatter, topBowler, topAllrounder, battingRanked, bowlingRanked, allrounderRanked } = calculateRanks(players);
 
 
-    // --- 1. CORE STATS ---
     const totalTournaments = data.tournaments.length;
     const totalMatches = data.tournaments.reduce((sum, t) => sum + (t.matches ? t.matches.length : 0), 0);
     const totalPlayers = data.players.length;
@@ -36,7 +31,6 @@ async function initHomeStats() {
     document.getElementById('total-players').innerHTML = `<h3>${totalPlayers}</h3><p>Total Players Registered</p>`;
 
 
-    // --- Helper function to create the leader card HTML with image ---
     const createLeaderCard = (player, title, statLabel, statValue) => {
         const imageUrl = player.profile_image_url || 'images/default_player.jpg';
         return `
@@ -49,19 +43,13 @@ async function initHomeStats() {
         `;
     };
 
-
-    // --- 2. TOP INDIVIDUAL LEADERS (CARDS - Based on Raw Stats) ---
     const highestScorer = players.reduce((max, player) => player.total_runs > max.total_runs ? player : max, players[0]);
     const highestSixHitter = players.reduce((max, player) => player.sixes > max.sixes ? player : max, players[0]);
-    
-    // We reuse topBowler from the calculated ranking list as it's the same logic (most wickets)
     
     document.getElementById('highest-scorer-card').innerHTML = createLeaderCard(highestScorer, 'Highest Scorer 🏏', 'Runs', highestScorer.total_runs);
     document.getElementById('top-bowler-card').innerHTML = createLeaderCard(topBowler, 'Top Wicket Taker 🥎', 'Wickets', topBowler.wickets);
     document.getElementById('highest-six-hitter-card').innerHTML = createLeaderCard(highestSixHitter, 'Highest Six Hitter 💥', 'Total Sixes', highestSixHitter.sixes);
 
-    
-    // --- 3. RANK 1 PLAYERS (NEW SECTION) ---
     const createRank1Card = (player, rankType, statValue) => {
         const imageUrl = player.profile_image_url || 'images/default_player.jpg';
         return `
@@ -78,10 +66,6 @@ async function initHomeStats() {
     document.getElementById('rank-1-bowler-card').innerHTML = createRank1Card(topBowler, 'BOWLER', `${topBowler.wickets} Wickets`);
     document.getElementById('rank-1-allrounder-card').innerHTML = createRank1Card(topAllrounder, 'ALL-ROUNDER', `${Math.round(topAllrounder.all_rounder_rating)} Rating`);
 
-
-    // --- 4. RANKINGS (TOP 3 LISTS) ---
-
-    // Helper function to create ranking list items (unchanged from last step)
     const createRankingList = (playersArray, rankingType) => {
         let listHTML = '';
         playersArray.slice(0, 3).forEach((player, index) => {

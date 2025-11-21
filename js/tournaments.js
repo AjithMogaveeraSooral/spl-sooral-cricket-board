@@ -1,8 +1,5 @@
 let allTournaments = [];
 
-// --- HELPER FUNCTIONS FOR SCORECARD RENDERING ---
-
-// Function to generate a batting table HTML
 function generateBattingTable(team, score, stats, inningsNumber) {
     let tableHtml = `
         <h4 style="color: var(--text-color); margin-top: 20px;">${team} - ${score} (Innings ${inningsNumber})</h4>
@@ -33,7 +30,6 @@ function generateBattingTable(team, score, stats, inningsNumber) {
     return tableHtml;
 }
 
-// Function to generate a bowling table HTML
 function generateBowlingTable(stats) {
     let tableHtml = `
         <h4 style="color: var(--text-color); margin-top: 20px;">Bowling Analysis</h4>
@@ -62,12 +58,8 @@ function generateBowlingTable(stats) {
     return tableHtml;
 }
 
-// --- CORE FUNCTIONS ---
-
-// Function to populate the tournament dropdown
 function populateTournamentSelector(tournaments) {
     const selector = document.getElementById('tournament-selector');
-    // Clear existing options, in case of re-initialization
     selector.innerHTML = ''; 
     tournaments.forEach(t => {
         const option = document.createElement('option');
@@ -77,7 +69,6 @@ function populateTournamentSelector(tournaments) {
     });
 }
 
-// Function to create an HTML card for a single match
 function createMatchCard(match) {
     return `
         <div class="match-card" onclick="displayScorecard('${match.match_id}')">
@@ -89,7 +80,6 @@ function createMatchCard(match) {
     `;
 }
 
-// Function to render the match cards for the selected tournament
 function renderMatchCards(matches) {
     const container = document.getElementById('matches-container');
     if (matches.length === 0) {
@@ -99,7 +89,6 @@ function renderMatchCards(matches) {
     container.innerHTML = matches.map(createMatchCard).join('');
 }
 
-// Global function called when the dropdown selection changes
 function loadMatches() {
     const selector = document.getElementById('tournament-selector');
     const selectedId = selector.value;
@@ -111,7 +100,6 @@ function loadMatches() {
         return;
     }
 
-    // Find the selected tournament object
     const selectedTournament = allTournaments.find(t => t.id === selectedId);
 
     if (selectedTournament) {
@@ -121,12 +109,10 @@ function loadMatches() {
     }
 }
 
-// Function to display the detailed scorecard for a clicked match
 function displayScorecard(matchId) {
     const selector = document.getElementById('tournament-selector');
     const selectedId = selector.value;
-    
-    // Find the match
+
     const selectedTournament = allTournaments.find(t => t.id === selectedId);
     const match = selectedTournament ? selectedTournament.matches.find(m => m.match_id === matchId) : null;
     
@@ -135,7 +121,6 @@ function displayScorecard(matchId) {
     if (match && match.detailed_scorecard) {
         const scorecard = match.detailed_scorecard;
 
-        // Render Innings 1
         const innings1Batting = generateBattingTable(
             scorecard.innings1.batting_team, 
             scorecard.innings1.score, 
@@ -144,7 +129,6 @@ function displayScorecard(matchId) {
         );
         const innings1Bowling = generateBowlingTable(scorecard.innings1.bowling_stats);
         
-        // Render Innings 2
         const innings2Batting = generateBattingTable(
             scorecard.innings2.batting_team, 
             scorecard.innings2.score, 
@@ -176,22 +160,15 @@ function displayScorecard(matchId) {
 }
 
 
-// Initialization
 async function initTournaments() {
-    // NOTE: fetchSPLData() is assumed to be an existing function that fetches your data.
     const data = await fetchSPLData(); 
     if (data && data.tournaments) {
         allTournaments = data.tournaments;
         populateTournamentSelector(allTournaments);
         
-        // --- FIX ADDED HERE ---
-        // Attach the loadMatches function to the 'change' event of the selector
         document.getElementById('tournament-selector').addEventListener('change', loadMatches);
-        // -----------------------
 
-        // Load the latest season's matches by default, if available
         if (allTournaments.length > 0) {
-            // Select the first tournament in the list (usually the latest)
             document.getElementById('tournament-selector').value = allTournaments[0].id;
             loadMatches(); 
         }

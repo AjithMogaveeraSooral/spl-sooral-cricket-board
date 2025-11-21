@@ -6,7 +6,6 @@
     <title>SPL Tournaments & Matches</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Additional styling for the tournament page */
         #tournament-selector {
             padding: 10px;
             font-size: 1em;
@@ -19,7 +18,6 @@
 
         #matches-container {
             display: grid;
-            /* Default desktop/tablet layout: responsive columns with a minimum width of 350px */
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 20px;
             margin-top: 20px;
@@ -53,7 +51,6 @@
             color: white;
         }
 
-        /* Modal or dedicated scorecard display */
         #scorecard-display {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 25px;
@@ -67,28 +64,24 @@
             color: var(--accent-color);
         }
 
-        /* 📱 MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             
-            /* Adjust the navigation to stack links vertically */
             header nav {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center links */
+                align-items: center;
             }
             header nav a {
-                margin: 5px 0; /* Add vertical spacing between links */
+                margin: 5px 0;
             }
 
-            /* Make the tournament selector full width for easy tapping */
             #tournament-selector {
                 width: 100%;
-                box-sizing: border-box; /* Include padding in the width calculation */
+                box-sizing: border-box;
             }
 
-            /* Force the match cards into a single column */
             #matches-container {
-                grid-template-columns: 1fr; /* Single column, taking full width */
+                grid-template-columns: 1fr;
             }
         }
 
