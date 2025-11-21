@@ -53,21 +53,6 @@
       "all_rounder_rating": 11.86
     },
     {
-      "player_id": "P076",
-      "name": "Anand Sooral",
-      "matches": 0,
-      "innings": 0,
-      "total_runs": 0,
-      "highest_score": 0,
-      "fours": 0,
-      "sixes": 0,
-      "bowling_overs": 0.0,
-      "wickets": 0,
-      "best_spell": "0-0",
-      "profile_image_url": "images/default_player.jpg",
-      "all_rounder_rating": 0.0
-    },
-    {
       "player_id": "P055",
       "name": "Bulli",
       "matches": 4,
