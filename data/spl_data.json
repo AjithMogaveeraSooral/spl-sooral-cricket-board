@@ -3364,404 +3364,382 @@
         },
         {
           "match_id": "M306",
-          "match_details": {
-            "match": "Sooral Sixers vs Sooral Bulls",
-            "ground": "Sooral, Udupi",
-            "date": "2023-01-08",
-            "time_utc": "09:58 AM UTC",
-            "toss": "Sooral Bulls opt to field",
-            "result": "Sooral Sixers won by 14 runs"
-          },
-          "innings_1": {
-            "team": "Sooral Sixers",
-            "score": "49/4 (10.0 Ov)",
-            "batting": [
-              {
-                "batsman": "Sunil Sural",
-                "status": "c Sathish Pillu b shashank",
-                "R": 7,
-                "B": 14,
-                "SR": 50.0
-              },
-              {
-                "batsman": "Rakesh Sooral",
-                "status": "c Sathish Pillu b Raghavendra",
-                "R": 4,
-                "B": 4,
-                "SR": 100.0
-              },
-              {
-                "batsman": "Sathish Banna (c)",
-                "status": "b shashank",
-                "R": 12,
-                "B": 17,
-                "SR": 70.59
-              },
-              {
-                "batsman": "Ranjith Serigara",
-                "status": "c Sharath Sooral b Rakshi S",
-                "R": 1,
-                "B": 2,
-                "SR": 50.0
-              },
-              {
-                "batsman": "Dileep Sural",
-                "status": "not out",
-                "R": 4,
-                "B": 10,
-                "SR": 40.0
-              },
-              {
-                "batsman": "Nagaraj",
-                "status": "not out",
-                "R": 16,
-                "B": 13,
-                "SR": 123.08
-              }
-            ],
-            "extras": 5,
-            "fall_of_wickets": [
-              "6-1 (Rakesh Sooral, 1.2 ov)",
-              "25-2 (Sathish Banna, 5.4 ov)",
-              "26-3 (Sunil Sural, 6 ov)",
-              "26-4 (Ranjith Serigara, 6.1 ov)"
-            ],
-            "bowling": [
-              {
-                "bowler": "Sharath Sooral",
-                "O": 3,
-                "M": 0,
-                "R": 16,
-                "W": 0,
-                "Eco": 5.33
-              },
-              {
-                "bowler": "Raghavendra",
-                "O": 3,
-                "M": 0,
-                "R": 8,
-                "W": 1,
-                "Eco": 2.67
-              },
-              {
-                "bowler": "Rakshi S (c)",
-                "O": 2,
-                "M": 0,
-                "R": 14,
-                "W": 1,
-                "Eco": 7.0
-              },
-              {
-                "bowler": "shashank",
-                "O": 2,
-                "M": 0,
-                "R": 11,
-                "W": 2,
-                "Eco": 5.5
-              }
-            ]
-          },
-          "innings_2": {
-            "team": "Sooral Bulls",
-            "score": "35/7 (10.0 Ov)",
-            "batting": [
-              {
-                "batsman": "shashank",
-                "status": "b Ranjith Serigara",
-                "R": 1,
-                "B": 3,
-                "SR": 33.33
-              },
-              {
-                "batsman": "Rakshi S (c)",
-                "status": "c Nithin S b Rakesh Sooral",
-                "R": 1,
-                "B": 3,
-                "SR": 33.33
-              },
-              {
-                "batsman": "Sharath Sooral",
-                "status": "c Ganesh P b Ranjith Serigara",
-                "R": 14,
-                "B": 26,
-                "SR": 53.85
-              },
-              {
-                "batsman": "Yashu Sooral",
-                "status": "c Ranjith Serigara b Rakesh Sooral",
-                "R": 0,
-                "B": 2,
-                "SR": 0.0
-              },
-              {
-                "batsman": "Raghavendra",
-                "status": "b Rakesh Sooral",
-                "R": 4,
-                "B": 3,
-                "SR": 133.33
-              },
-              {
-                "batsman": "Nishan Gunda",
-                "status": "c Nithin S b Dileep Sural",
-                "R": 0,
-                "B": 2,
-                "SR": 0.0
-              },
-              {
-                "batsman": "Sacheendra S",
-                "status": "c Sathish Banna b Rakesh Sooral",
-                "R": 1,
-                "B": 8,
-                "SR": 12.5
-              },
-              {
-                "batsman": "Sathish Pillu",
-                "status": "not out",
-                "R": 7,
-                "B": 11,
-                "SR": 63.64
-              },
-              {
-                "batsman": "Vikas Sural",
-                "status": "not out",
-                "R": 0,
-                "B": 3,
-                "SR": 0.0
-              }
-            ],
-            "extras": 7,
-            "fall_of_wickets": [
-              "2-1 (shashank, 0.5 ov)",
-              "2-2 (Rakshi S, 1.1 ov)",
-              "2-3 (Yashu Sooral, 1.3 ov)",
-              "6-4 (Raghavendra, 2 ov)",
-              "10-5 (Nishan Gunda, 4 ov)",
-              "27-6 (Sharath Sooral, 7.2 ov)",
-              "31-7 (Sacheendra S, 8.2 ov)"
-            ],
-            "bowling": [
-              {
-                "bowler": "Ranjith Serigara",
-                "O": 3,
-                "M": 0,
-                "R": 8,
-                "W": 2,
-                "Eco": 2.67
-              },
-              {
-                "bowler": "Rakesh Sooral",
-                "O": 3,
-                "M": 0,
-                "R": 9,
-                "W": 4,
-                "Eco": 3.0
-              },
-              {
-                "bowler": "Dileep Sural",
-                "O": 2,
-                "M": 0,
-                "R": 6,
-                "W": 1,
-                "Eco": 3.0
-              },
-              {
-                "bowler": "Sathish Banna (c)",
-                "O": 2,
-                "M": 0,
-                "R": 12,
-                "W": 0,
-                "Eco": 6.0
-              }
-            ]
+          "teams": ["Sooral Sixers", "Sooral Bulls"],
+          "winner": "Sooral Sixers",
+          "man_of_the_match": "Nagaraj (16 runs not out)",
+          "scorecard_summary": "Sooral Sixers won by 14 runs.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Sixers won by 14 runs.",
+            "innings1": {
+              "batting_team": "Sooral Sixers",
+              "score": "49/4 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sunil Sural",
+                  "runs": 7,
+                  "balls": 14,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sathish Pillu b shashank"
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "runs": 4,
+                  "balls": 4,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sathish Pillu b Raghavendra"
+                },
+                {
+                  "name": "Sathish Banna (c)",
+                  "runs": 12,
+                  "balls": 17,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b shashank"
+                },
+                {
+                  "name": "Ranjith Serigara",
+                  "runs": 1,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sharath Sooral b Rakshi S"
+                },
+                {
+                  "name": "Dileep Sural",
+                  "runs": 4,
+                  "balls": 10,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Nagaraj",
+                  "runs": 16,
+                  "balls": 13,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "overs": 3,
+                  "runs": 16,
+                  "wickets": 0,
+                  "maidens": 0
+                },
+                {
+                  "name": "Raghavendra",
+                  "overs": 3,
+                  "runs": 8,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "Rakshi S (c)",
+                  "overs": 2,
+                  "runs": 14,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "shashank",
+                  "overs": 2,
+                  "runs": 11,
+                  "wickets": 2,
+                  "maidens": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Sooral Bulls",
+              "score": "35/7 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "shashank",
+                  "runs": 1,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Ranjith Serigara"
+                },
+                {
+                  "name": "Rakshi S (c)",
+                  "runs": 1,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Nithin S b Rakesh Sooral"
+                },
+                {
+                  "name": "Sharath Sooral",
+                  "runs": 14,
+                  "balls": 26,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Ganesh P b Ranjith Serigara"
+                },
+                {
+                  "name": "Yashu Sooral",
+                  "runs": 0,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Ranjith Serigara b Rakesh Sooral"
+                },
+                {
+                  "name": "Raghavendra",
+                  "runs": 4,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b Rakesh Sooral"
+                },
+                {
+                  "name": "Nishan Gunda",
+                  "runs": 0,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Nithin S b Dileep Sural"
+                },
+                {
+                  "name": "Sacheendra S",
+                  "runs": 1,
+                  "balls": 8,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Sathish Banna b Rakesh Sooral"
+                },
+                {
+                  "name": "Sathish Pillu",
+                  "runs": 7,
+                  "balls": 11,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Vikas Sural",
+                  "runs": 0,
+                  "balls": 3,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Ranjith Serigara",
+                  "overs": 3,
+                  "runs": 8,
+                  "wickets": 2,
+                  "maidens": 0
+                },
+                {
+                  "name": "Rakesh Sooral",
+                  "overs": 3,
+                  "runs": 9,
+                  "wickets": 4,
+                  "maidens": 0
+                },
+                {
+                  "name": "Dileep Sural",
+                  "overs": 2,
+                  "runs": 6,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "Sathish Banna (c)",
+                  "overs": 2,
+                  "runs": 12,
+                  "wickets": 0,
+                  "maidens": 0
+                }
+              ]
+            }
           }
         },
         {
           "match_id": "M307",
-          "match_details": {
-            "match": "Sooral Bulls vs Kings Sooral",
-            "ground": "Sooral, Udupi",
-            "date": "2023-01-08",
-            "time_utc": "11:21 AM UTC",
-            "toss": "Sooral Bulls opt to bat",
-            "result": "Sooral Bulls won by 10 runs"
-          },
-          "innings_1": {
-            "team": "Sooral Bulls",
-            "score": "69/4 (10.0 Ov)",
-            "batting": [
-              {
-                "batsman": "Sharath Sooral",
-                "status": "c Amith S b Prajwal Devadiga",
-                "R": 14,
-                "B": 10,
-                "SR": 140.0
-              },
-              {
-                "batsman": "shashank",
-                "status": "c Amith S b Karthik Image",
-                "R": 9,
-                "B": 18,
-                "SR": 50.0
-              },
-              {
-                "batsman": "Rakshi S (c)",
-                "status": "c Mahendra Kali b Pacha S",
-                "R": 13,
-                "B": 16,
-                "SR": 81.25
-              },
-              {
-                "batsman": "Yashu Sooral",
-                "status": "run out † Raviraj",
-                "R": 3,
-                "B": 6,
-                "SR": 50.0
-              },
-              {
-                "batsman": "Raghavendra",
-                "status": "not out",
-                "R": 12,
-                "B": 8,
-                "SR": 150.0
-              },
-              {
-                "batsman": "Sathish Pillu",
-                "status": "not out",
-                "R": 1,
-                "B": 2,
-                "SR": 50.0
-              }
-            ],
-            "extras": 17,
-            "fall_of_wickets": [
-              "22-1 (Sharath Sooral, 2 ov)",
-              "45-2 (shashank, 6.3 ov)",
-              "53-3 (Yashu Sooral, 8 ov)",
-              "54-4 (Rakshi S, 8.2 ov)"
-            ],
-            "bowling": [
-              {
-                "bowler": "Vijay Sural (c)",
-                "O": 3,
-                "M": 0,
-                "R": 26,
-                "W": 0,
-                "Eco": 8.67
-              },
-              {
-                "bowler": "Prajwal Devadiga",
-                "O": 3,
-                "M": 0,
-                "R": 18,
-                "W": 1,
-                "Eco": 6.0
-              },
-              {
-                "bowler": "Karthik Image",
-                "O": 2,
-                "M": 0,
-                "R": 12,
-                "W": 1,
-                "Eco": 6.0
-              },
-              {
-                "bowler": "Pacha S",
-                "O": 2,
-                "M": 0,
-                "R": 11,
-                "W": 1,
-                "Eco": 5.5
-              }
-            ]
-          },
-          "innings_2": {
-            "team": "Kings Sooral",
-            "score": "59/4 (10.0 Ov)",
-            "batting": [
-              {
-                "batsman": "Raviraj (wk)",
-                "status": "run out Nishan Gunda",
-                "R": 20,
-                "B": 17,
-                "SR": 117.65
-              },
-              {
-                "batsman": "Amith S",
-                "status": "c Sacheendra S b Raghavendra",
-                "R": 10,
-                "B": 6,
-                "SR": 166.67
-              },
-              {
-                "batsman": "Prajwal Devadiga",
-                "status": "b shashank",
-                "R": 15,
-                "B": 20,
-                "SR": 75.0
-              },
-              {
-                "batsman": "Pacha S",
-                "status": "not out",
-                "R": 8,
-                "B": 11,
-                "SR": 72.73
-              },
-              {
-                "batsman": "Mahendra Kali",
-                "status": "b shashank",
-                "R": 0,
-                "B": 1,
-                "SR": 0.0
-              },
-              {
-                "batsman": "Vijay Sural (c)",
-                "status": "not out",
-                "R": 1,
-                "B": 5,
-                "SR": 20.0
-              }
-            ],
-            "extras": 5,
-            "fall_of_wickets": [
-              "12-1 (Amith S, 2 ov)",
-              "39-2 (Raviraj, 5.1 ov)",
-              "52-3 (Prajwal Devadiga, 8.1 ov)",
-              "52-4 (Mahendra Kali, 8.2 ov)"
-            ],
-            "bowling": [
-              {
-                "bowler": "Sharath Sooral",
-                "O": 3,
-                "M": 0,
-                "R": 30,
-                "W": 0,
-                "Eco": 10.0
-              },
-              {
-                "bowler": "Raghavendra",
-                "O": 2,
-                "M": 0,
-                "R": 13,
-                "W": 1,
-                "Eco": 6.5
-              },
-              {
-                "bowler": "Rakshi S (c)",
-                "O": 3,
-                "M": 0,
-                "R": 13,
-                "W": 0,
-                "Eco": 4.33
-              },
-              {
-                "bowler": "shashank",
-                "O": 2,
-                "M": 0,
-                "R": 3,
-                "W": 2,
-                "Eco": 1.5
-              }
-            ]
+          "teams": ["Sooral Bulls", "Kings Sooral"],
+          "winner": "Sooral Bulls",
+          "man_of_the_match": "shashank (9 runs, 2 wickets for 3 runs)",
+          "scorecard_summary": "Sooral Bulls won by 10 runs.",
+          "detailed_scorecard": {
+            "result_summary": "Sooral Bulls won by 10 runs.",
+            "innings1": {
+              "batting_team": "Sooral Bulls",
+              "score": "69/4 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "runs": 14,
+                  "balls": 10,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "c Amith S b Prajwal Devadiga"
+                },
+                {
+                  "name": "shashank",
+                  "runs": 9,
+                  "balls": 18,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "c Amith S b Karthik Image"
+                },
+                {
+                  "name": "Rakshi S (c)",
+                  "runs": 13,
+                  "balls": 16,
+                  "fours": 1,
+                  "sixes": 0,
+                  "status": "c Mahendra Kali b Pacha S"
+                },
+                {
+                  "name": "Yashu Sooral",
+                  "runs": 3,
+                  "balls": 6,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "run out † Raviraj"
+                },
+                {
+                  "name": "Raghavendra",
+                  "runs": 12,
+                  "balls": 8,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "not out"
+                },
+                {
+                  "name": "Sathish Pillu",
+                  "runs": 1,
+                  "balls": 2,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Vijay Sural (c)",
+                  "overs": 3,
+                  "runs": 26,
+                  "wickets": 0,
+                  "maidens": 0
+                },
+                {
+                  "name": "Prajwal Devadiga",
+                  "overs": 3,
+                  "runs": 18,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "Karthik Image",
+                  "overs": 2,
+                  "runs": 12,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "Pacha S",
+                  "overs": 2,
+                  "runs": 11,
+                  "wickets": 1,
+                  "maidens": 0
+                }
+              ]
+            },
+            "innings2": {
+              "batting_team": "Kings Sooral",
+              "score": "59/4 (10.0 Ov)",
+              "batting_stats": [
+                {
+                  "name": "Raviraj (wk)",
+                  "runs": 20,
+                  "balls": 17,
+                  "fours": 2,
+                  "sixes": 1,
+                  "status": "run out Nishan Gunda"
+                },
+                {
+                  "name": "Amith S",
+                  "runs": 10,
+                  "balls": 6,
+                  "fours": 1,
+                  "sixes": 1,
+                  "status": "c Sacheendra S b Raghavendra"
+                },
+                {
+                  "name": "Prajwal Devadiga",
+                  "runs": 15,
+                  "balls": 20,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b shashank"
+                },
+                {
+                  "name": "Pacha S",
+                  "runs": 8,
+                  "balls": 11,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                },
+                {
+                  "name": "Mahendra Kali",
+                  "runs": 0,
+                  "balls": 1,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "b shashank"
+                },
+                {
+                  "name": "Vijay Sural (c)",
+                  "runs": 1,
+                  "balls": 5,
+                  "fours": 0,
+                  "sixes": 0,
+                  "status": "not out"
+                }
+              ],
+              "bowling_stats": [
+                {
+                  "name": "Sharath Sooral",
+                  "overs": 3,
+                  "runs": 30,
+                  "wickets": 0,
+                  "maidens": 0
+                },
+                {
+                  "name": "Raghavendra",
+                  "overs": 2,
+                  "runs": 13,
+                  "wickets": 1,
+                  "maidens": 0
+                },
+                {
+                  "name": "Rakshi S (c)",
+                  "overs": 3,
+                  "runs": 13,
+                  "wickets": 0,
+                  "maidens": 0
+                },
+                {
+                  "name": "shashank",
+                  "overs": 2,
+                  "runs": 3,
+                  "wickets": 2,
+                  "maidens": 0
+                }
+              ]
+            }
           }
         }
       ]

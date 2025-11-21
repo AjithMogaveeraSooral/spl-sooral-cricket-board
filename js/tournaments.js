@@ -67,6 +67,8 @@ function generateBowlingTable(stats) {
 // Function to populate the tournament dropdown
 function populateTournamentSelector(tournaments) {
     const selector = document.getElementById('tournament-selector');
+    // Clear existing options, in case of re-initialization
+    selector.innerHTML = ''; 
     tournaments.forEach(t => {
         const option = document.createElement('option');
         option.value = t.id;
@@ -176,11 +178,17 @@ function displayScorecard(matchId) {
 
 // Initialization
 async function initTournaments() {
-    const data = await fetchSPLData();
+    // NOTE: fetchSPLData() is assumed to be an existing function that fetches your data.
+    const data = await fetchSPLData(); 
     if (data && data.tournaments) {
         allTournaments = data.tournaments;
         populateTournamentSelector(allTournaments);
         
+        // --- FIX ADDED HERE ---
+        // Attach the loadMatches function to the 'change' event of the selector
+        document.getElementById('tournament-selector').addEventListener('change', loadMatches);
+        // -----------------------
+
         // Load the latest season's matches by default, if available
         if (allTournaments.length > 0) {
             // Select the first tournament in the list (usually the latest)
