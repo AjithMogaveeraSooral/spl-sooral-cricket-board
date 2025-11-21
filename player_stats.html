@@ -6,6 +6,16 @@
     <title>SPL Player Statistics</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        :root {
+            --accent-color: #02f4d4;
+            --text-color: #ffffff;
+        }
+        
+        h2 {
+            font-size: 1.8em; 
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             
             main {
@@ -21,9 +31,20 @@
                 margin: 5px 0;
             }
 
-            #player-search {
+            .controls-container {
+                flex-direction: column;
+                gap: 10px !important;
+            }
+
+            #player-search,
+            #sort-by-select {
                 width: 100% !important;
                 box-sizing: border-box;
+            }
+
+            .sort-group {
+                width: 100%;
+                justify-content: space-between;
             }
 
             #player-cards-container {
@@ -32,8 +53,25 @@
             }
 
             .player-card { 
-                 width: 100%;
-                 margin-bottom: 15px; 
+                width: 100%;
+                margin-bottom: 15px; 
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .player-card h3 {
+                font-size: 1.2em !important;
+            }
+            .player-card p {
+                font-size: 0.9em;
+            }
+            .player-card div p {
+                font-size: 1.2em !important;
+            }
+            .player-card .stat-label {
+                font-size: 0.8em;
             }
         }
     </style>
@@ -53,16 +91,35 @@
     <main>
         <h2>All Players: Lifetime Records</h2>
         
-        <input 
-            type="text" 
-            id="player-search" 
-            placeholder="Filter players by name..."
-            onkeyup="filterPlayers()"
-            style="width: 300px; padding: 10px; margin-bottom: 20px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.5); color: var(--text-color); border-radius: 5px;"
-        >
+        <div class="controls-container" style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+            <input 
+                type="text" 
+                id="player-search" 
+                placeholder="Filter players by name..."
+                onkeyup="filterPlayers()"
+                style="width: 300px; padding: 10px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.5); color: var(--text-color); border-radius: 5px; flex-grow: 1;"
+            >
+            
+            <div class="sort-group" style="display: flex; align-items: center; gap: 10px;">
+                <label for="sort-by-select" style="color: var(--text-color); font-weight: bold;">Sort By:</label>
+                <select 
+                    id="sort-by-select" 
+                    onchange="filterPlayers()" 
+                    style="padding: 10px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.7); color: var(--text-color); border-radius: 5px; cursor: pointer;"
+                >
+                    <option value="name">Player Name (A-Z)</option>
+                    <option value="batting_rank">Batting Rank</option>
+                    <option value="bowling_rank">Bowling Rank</option>
+                    <option value="allrounder_rank">All-rounder Rank</option>
+                    <option value="highest_score">Highest Score</option>
+                    <option value="wickets">Total Wickets</option>
+                    <option value="sixes">Highest Six Hitter</option>
+                </select>
+            </div>
+        </div>
 
         <section id="player-cards-container">
-            </section>
+        </section>
     </main>
 
     <script src="js/main.js"></script>

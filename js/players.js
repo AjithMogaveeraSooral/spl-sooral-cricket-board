@@ -1,15 +1,14 @@
 let allPlayersData = [];
 let rankedPlayersData = [];
 
+function parseBestSpell(spell) {
+    const parts = spell.split('/');
+    const wickets = parseInt(parts[0], 10);
+    const runs = parseInt(parts[1], 10);
+    return { wickets, runs };
+}
 
 function calculateRanks(players) {
-    const parseBestSpell = (spell) => {
-        const parts = spell.split('/');
-        const wickets = parseInt(parts[0], 10);
-        const runs = parseInt(parts[1], 10);
-        return { wickets, runs };
-    };
-
     const battingSorted = [...players].sort((a, b) => b.highest_score - a.highest_score);
     const battingMap = new Map(battingSorted.map((player, index) => [player.player_id, index + 1]));
 
@@ -35,7 +34,6 @@ function calculateRanks(players) {
         allrounder_rank: allrounderMap.get(player.player_id)
     }));
 }
-
 
 function sortPlayersByName(players) {
     return [...players].sort((a, b) => {
@@ -85,6 +83,7 @@ function createPlayerCard(player) {
             <p><span class="stat-label">Innings Batted:</span> ${player.innings}</p>
             <p><span class="stat-label">Total Runs:</span> <strong>${player.total_runs}</strong></p>
             <p><span class="stat-label">Highest Score:</span> ${player.highest_score}</p>
+            <p><span class="stat-label">Total Sixes:</span> <strong>${player.sixes || 0}</strong></p>
             <p><span class="stat-label">Wickets Taken:</span> <strong>${player.wickets}</strong></p>
             <p><span class="stat-label">Best Spell:</span> ${player.best_spell}</p>
         </div>
@@ -99,8 +98,34 @@ function renderPlayerCards(players) {
 function filterPlayers() {
     const searchInput = document.getElementById('player-search');
     const searchTerm = searchInput.value.toLowerCase();
-    
-    const filteredPlayers = rankedPlayersData.filter(player => 
+    const sortSelect = document.getElementById('sort-by-select');
+
+    let tempSorted = [...rankedPlayersData];
+    switch (sortSelect.value) {
+        case 'name':
+            tempSorted = sortPlayersByName(rankedPlayersData);
+            break;
+        case 'batting_rank':
+            tempSorted.sort((a, b) => a.batting_rank - b.batting_rank);
+            break;
+        case 'bowling_rank':
+            tempSorted.sort((a, b) => a.bowling_rank - b.bowling_rank);
+            break;
+        case 'allrounder_rank':
+            tempSorted.sort((a, b) => a.allrounder_rank - b.allrounder_rank);
+            break;
+        case 'highest_score':
+            tempSorted.sort((a, b) => b.highest_score - a.highest_score);
+            break;
+        case 'wickets':
+            tempSorted.sort((a, b) => b.wickets - a.wickets);
+            break;
+        case 'sixes':
+            tempSorted.sort((a, b) => (b.sixes || 0) - (a.sixes || 0));
+            break;
+    }
+
+    const filteredPlayers = tempSorted.filter(player => 
         player.name.toLowerCase().includes(searchTerm)
     );
     
@@ -117,6 +142,10 @@ async function initPlayerStats() {
         rankedPlayersData = sortPlayersByName(playersWithRanks);
         
         renderPlayerCards(rankedPlayersData); 
+
+        document.getElementById('sort-by-select').addEventListener('change', () => {
+            filterPlayers(); 
+        });
     }
 }
 
