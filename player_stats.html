@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL Player Statistics</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS to ensure responsive layout for the player cards container */
+        
+        /* Assuming #player-cards-container uses grid or flex for desktop */
+        /* This desktop/default styling should be defined in css/style.css, 
+           but we'll add mobile overrides here. */
+
+        /* 📱 MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            
+            /* General adjustments for small screens */
+            main {
+                padding: 10px; /* Reduce padding on main content area */
+            }
+
+            /* Adjust the navigation to stack links vertically */
+            header nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Center links */
+            }
+            header nav a {
+                margin: 5px 0; /* Add vertical spacing between links */
+            }
+
+            /* Make the search bar full width */
+            #player-search {
+                width: 100% !important; /* Ensure it takes full width, overriding inline style */
+                box-sizing: border-box; /* Include padding/border in the element's total width */
+            }
+
+            /* If the container uses a grid, ensure only one card per row */
+            /* This is a common pattern for responsiveness in a cards layout */
+            #player-cards-container {
+                /* Example adjustment for a grid layout */
+                grid-template-columns: 1fr !important; 
+                /* Example adjustment for a flex layout (if cards are wide) */
+                display: block; /* If the container uses flex, block display will force children to stack */
+            }
+
+            /* Assuming the individual player cards will need to be full width */
+            /* You may need to adjust this selector based on the actual class/ID of the player card elements */
+            .player-card { 
+                 width: 100%;
+                 margin-bottom: 15px; /* Add spacing between stacked cards */
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="announcement-bar"></div>
