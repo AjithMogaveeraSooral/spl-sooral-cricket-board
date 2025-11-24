@@ -114,6 +114,9 @@ function filterPlayers() {
         case 'allrounder_rank':
             tempSorted.sort((a, b) => a.allrounder_rank - b.allrounder_rank);
             break;
+        case 'total_runs': 
+            tempSorted.sort((a, b) => b.total_runs - a.total_runs);
+            break;
         case 'highest_score':
             tempSorted.sort((a, b) => b.highest_score - a.highest_score);
             break;
