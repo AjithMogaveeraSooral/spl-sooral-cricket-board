@@ -34,31 +34,51 @@ function calculateBattingRating(p) {
     };
 }
 
-function calculateBowlingRating(p) {
+function calculateBowlingRating(p, leagueAvgEconomy = 0, leagueAvgStrikeRate = 99999) {
     const totalWickets = Number(p.wickets || 0);
     const totalBalls = Number(p.total_balls_bowled || 0);
     const conceded = Number(p.total_runs_conceded || 0);
-    const overs = totalBalls > 0 ? (Math.floor(totalBalls / 6) + (totalBalls % 6) / 10) : 0;
-    const economy = totalBalls > 0 ? (conceded / (totalBalls / 6)) : 0;
-    const bowlStrikeRate = totalWickets > 0 ? (totalBalls / totalWickets) : 0;
+    const maidens = Number(p.maidens || 0);
+    const threeWh = Number(p.three_wicket_hauls || 0);
+    const fourWh = Number(p.four_wicket_hauls || 0);
+    const fiveWh = Number(p.five_wicket_hauls || 0);
+    const matches = Math.max(Number(p.matches || 0), 1);
+
+    const oversDecimal = totalBalls > 0 ? (totalBalls / 6) : 0;
+    const oversDisplay = totalBalls > 0 ? `${Math.floor(totalBalls / 6)}.${totalBalls % 6}` : "0.0";
+
+    const economy = oversDecimal > 0 ? (conceded / oversDecimal) : 0;
+    const bowlStrikeRate = totalWickets > 0 ? (totalBalls / totalWickets) : 99999;
 
     const best = parseBestSpell(p.best_spell);
 
-    const points =
-        totalWickets * 24 +
-        (best.wickets || 0) * 14 -
-        (best.runs || 0) * 0.15 +
-        (Number(p.maidens) || 0) * 7 +
-        (Number(p.three_wicket_hauls) || 0) * 9 +
-        (Number(p.four_wicket_hauls) || 0) * 14 +
-        (Number(p.five_wicket_hauls) || 0) * 24 -
-        economy * 1.5;
+    const econDelta = leagueAvgEconomy > 0 ? (leagueAvgEconomy - economy) : 0; 
+    const srDelta = leagueAvgStrikeRate < 99999 ? (leagueAvgStrikeRate - bowlStrikeRate) : 0; 
+
+    let points =
+        totalWickets * 25 +                               
+        (best.wickets || 0) * 15 -                         
+        (best.runs || 0) * 0.12 +                         
+        maidens * 8 +                                    
+        threeWh * 9 + fourWh * 14 + fiveWh * 24;         
+
+
+    points += Math.max(0, econDelta) * 10;               
+    points += Math.max(0, srDelta) / 6; 
+
+    points -= economy * 1.2;
+
+    const wicketsPerMatch = totalWickets / matches;
+    points += wicketsPerMatch * 8;
 
     return {
         points: Math.round(points * 100) / 100,
         economy: Math.round(economy * 100) / 100,
-        strikeRate: Math.round(bowlStrikeRate * 100) / 100,
-        overs: overs
+        strikeRate: totalWickets > 0 ? Math.round(bowlStrikeRate * 100) / 100 : "—",
+        overs: oversDisplay,
+        raw: {
+            totalWickets, totalBalls, conceded, oversDecimal, wicketsPerMatch
+        }
     };
 }
 
@@ -69,7 +89,12 @@ function calculateAllrounderRating(bat, bowl) {
 }
 
 function assignRanks(list, key, hideZero = false) {
-    const sorted = [...list].sort((a, b) => (b[key] || 0) - (a[key] || 0));
+    const sorted = [...list].sort((a, b) => {
+        const A = Number(a[key] || 0);
+        const B = Number(b[key] || 0);
+        return B - A;
+    });
+
     let rank = 1;
     let lastScore = null;
     let lastRank = 1;
@@ -106,8 +131,19 @@ function calculateRanks(players) {
 
     const battingRanks = assignRanks(list, "batting_points");
 
+    let totalConceded = 0;
+    let totalBallsAll = 0;
+    let totalWicketsAll = 0;
+    list.forEach(p => {
+        totalConceded += Number(p.total_runs_conceded || 0);
+        totalBallsAll += Number(p.total_balls_bowled || 0);
+        totalWicketsAll += Number(p.wickets || 0);
+    });
+    const leagueAvgEconomy = totalBallsAll > 0 ? (totalConceded / (totalBallsAll / 6)) : 0;
+    const leagueAvgStrikeRate = totalWicketsAll > 0 ? (totalBallsAll / totalWicketsAll) : 99999;
+
     list = list.map(p => {
-        const bowl = calculateBowlingRating(p);
+        const bowl = calculateBowlingRating(p, leagueAvgEconomy, leagueAvgStrikeRate);
         return {
             ...p,
             bowling_points: bowl.points,
@@ -117,7 +153,6 @@ function calculateRanks(players) {
         };
     });
 
-    // CORRECT LOGIC: Ranking is based on the calculated bowling_points
     const bowlingRanks = assignRanks(list, "bowling_points");
 
     list = list.map(p => {
@@ -163,7 +198,7 @@ function createPlayerCard(player) {
     const bowlingSR = player.bowling_strike_rate || "—";
     const best = parseBestSpell(player.best_spell || "0-0");
     const bestSpellDisplay = `${best.wickets}-${best.runs}`;
-    const overs = player.bowling_overs_calc || 0;
+    const overs = player.bowling_overs_calc || "0.0";
 
     return `
         <div class="player-card" style="padding:12px; border-radius:10px; background:linear-gradient(180deg,#0b1220,#061219); color:#e6eef8; box-shadow:0 6px 18px rgba(0,0,0,0.45);">
@@ -247,7 +282,7 @@ function filterPlayers() {
         case 'allrounder_rank':
             tempSorted.sort((a, b) => a.allrounder_rank - b.allrounder_rank);
             break;
-        case 'total_runs': 
+        case 'total_runs':
             tempSorted.sort((a, b) => b.total_runs - a.total_runs);
             break;
         case 'highest_score':
@@ -261,10 +296,10 @@ function filterPlayers() {
             break;
     }
 
-    const filteredPlayers = tempSorted.filter(player => 
+    const filteredPlayers = tempSorted.filter(player =>
         player.name.toLowerCase().includes(searchTerm)
     );
-    
+
     renderPlayerCards(filteredPlayers);
 }
 
@@ -276,7 +311,7 @@ async function initPlayerStats() {
         renderPlayerCards(rankedPlayersData);
 
         document.getElementById('sort-by-select').addEventListener('change', () => {
-            filterPlayers(); 
+            filterPlayers();
         });
     }
 }
