@@ -294,6 +294,23 @@ function filterPlayers() {
         case 'sixes':
             tempSorted.sort((a, b) => (b.sixes || 0) - (a.sixes || 0));
             break;
+            case 'fours':
+            tempSorted.sort((a, b) => (b.fours || 0) - (a.fours || 0));
+            break;
+        case 'economy':
+            tempSorted.sort((a, b) => {
+                const aEcon = a.bowling_economy > 0 ? a.bowling_economy : Infinity;
+                const bEcon = b.bowling_economy > 0 ? b.bowling_economy : Infinity;
+                return aEcon - bEcon;
+            });
+            break;
+        case 'batting_strike_rate':
+            tempSorted.sort((a, b) => {
+                const aSR = a.batting_strike_rate || 0;
+                const bSR = b.batting_strike_rate || 0;
+                return bSR - aSR;
+            });
+            break;
     }
 
     const filteredPlayers = tempSorted.filter(player =>
