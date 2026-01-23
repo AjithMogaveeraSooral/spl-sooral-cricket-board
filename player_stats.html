@@ -5,73 +5,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL Player Statistics</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --accent-color: #02f4d4;
-            --text-color: #ffffff;
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
         }
-        
-        h2 {
-            font-size: 1.8em; 
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 30px 20px;
             margin-bottom: 20px;
+            animation: fadeInUp 0.6s ease-out;
         }
 
+        .page-header h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #02F4D4 0%, #00d4aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header h2::before {
+            display: none;
+        }
+
+        .page-header p {
+            color: #a0a0c0;
+            font-size: 1em;
+        }
+
+        /* Controls Container */
+        .controls-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            border: 1px solid rgba(2, 244, 212, 0.2);
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease-out 0.1s backwards;
+        }
+
+        #player-search {
+            flex: 1;
+            min-width: 200px;
+            padding: 14px 20px;
+            border: 2px solid rgba(2, 244, 212, 0.3);
+            background: rgba(0, 0, 0, 0.4);
+            color: var(--text-color);
+            border-radius: 12px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        #player-search:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 20px rgba(2, 244, 212, 0.2);
+            outline: none;
+        }
+
+        #player-search::placeholder {
+            color: #6a6a8a;
+        }
+
+        .sort-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .sort-group label {
+            color: var(--text-color);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        #sort-by-select {
+            padding: 14px 45px 14px 20px;
+            border: 2px solid rgba(2, 244, 212, 0.3);
+            background: rgba(0, 0, 0, 0.4);
+            color: var(--text-color);
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2302F4D4' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        #sort-by-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 20px rgba(2, 244, 212, 0.2);
+            outline: none;
+        }
+
+        #sort-by-select option {
+            background: #0a0a2e;
+            color: var(--text-color);
+            padding: 10px;
+        }
+
+        /* Results Count */
+        .results-count {
+            color: #a0a0c0;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding-left: 5px;
+        }
+
+        /* Player Cards Grid */
+        #player-cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .player-card {
+            background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+            border: 1px solid rgba(2, 244, 212, 0.25);
+            padding: 25px;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .player-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #02F4D4, #00d4aa);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .player-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-color);
+            box-shadow: 0 20px 40px rgba(2, 244, 212, 0.12);
+        }
+
+        .player-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .player-card h3 {
+            font-size: 1.3em;
+            margin: 0 0 15px 0;
+            color: var(--accent-color);
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(2, 244, 212, 0.25);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .player-card h3 .player-icon {
+            font-size: 1.2em;
+        }
+
+        .player-card .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .player-card .stat-row:hover {
+            background: rgba(2, 244, 212, 0.05);
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0 -10px;
+            border-radius: 8px;
+        }
+
+        .player-card .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #a0a0c0;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .stat-value {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .stat-value.highlight {
+            color: var(--accent-color);
+            font-size: 1.1em;
+        }
+
+        /* Rank Badge */
+        .rank-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, rgba(2, 244, 212, 0.2), rgba(2, 244, 212, 0.1));
+            border: 1px solid rgba(2, 244, 212, 0.4);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #a0a0c0;
+        }
+
+        .empty-state .icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .empty-state p {
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(2, 244, 212, 0.2);
+            color: #a0a0c0;
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            
-            main {
-                padding: 10px;
-            }
-
-            header nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            header nav a {
-                margin: 5px 0;
-            }
-
             .controls-container {
                 flex-direction: column;
-                gap: 10px !important;
+                padding: 15px;
             }
 
-            #player-search,
-            #sort-by-select {
-                width: 100% !important;
-                box-sizing: border-box;
+            #player-search {
+                width: 100%;
             }
 
             .sort-group {
                 width: 100%;
-                justify-content: space-between;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 8px;
+            }
+
+            #sort-by-select {
+                width: 100%;
             }
 
             #player-cards-container {
-                grid-template-columns: 1fr !important; 
-                display: block; 
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
 
-            .player-card { 
-                width: 100%;
-                margin-bottom: 15px; 
-            }
-
-            h2 {
+            .page-header h2 {
                 font-size: 1.5em;
             }
-            
+
+            .player-card {
+                padding: 20px;
+            }
+
             .player-card h3 {
-                font-size: 1.2em !important;
+                font-size: 1.15em;
             }
-            .player-card p {
-                font-size: 0.9em;
+        }
+
+        @media (max-width: 480px) {
+            .player-card .stat-row {
+                flex-direction: column;
+                gap: 4px;
+                padding: 8px 0;
             }
-            .player-card div p {
-                font-size: 1.2em !important;
-            }
-            .player-card .stat-label {
-                font-size: 0.8em;
+
+            .stat-value {
+                font-size: 1.1em;
             }
         }
     </style>
@@ -80,33 +311,38 @@
     <div id="announcement-bar"></div>
 
     <header>
-        <h1>SPL Player Stats</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="tournaments.html">Tournaments</a>
-            <a href="player_stats.html">Player Stats</a>
-        </nav>
+        <div class="header-content">
+            <h1>🏏 Sooral Premier League</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="player_stats.html" class="active">Player Stats</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>All Players: Lifetime Records</h2>
+        <div class="page-header">
+            <h2>📊 Player Statistics</h2>
+            <p>Explore lifetime records of all SPL players</p>
+        </div>
         
-        <div class="controls-container" style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+        <div class="controls-container">
             <input 
                 type="text" 
                 id="player-search" 
-                placeholder="Filter players by name..."
+                placeholder="🔍 Search players by name..."
                 onkeyup="filterPlayers()"
-                style="width: 300px; padding: 10px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.5); color: var(--text-color); border-radius: 5px; flex-grow: 1;"
             >
             
-            <div class="sort-group" style="display: flex; align-items: center; gap: 10px;">
-                <label for="sort-by-select" style="color: var(--text-color); font-weight: bold;">Sort By:</label>
-                <select 
-                    id="sort-by-select" 
-                    onchange="filterPlayers()" 
-                    style="padding: 10px; border: 2px solid var(--accent-color); background: rgba(0,0,0,0.7); color: var(--text-color); border-radius: 5px; cursor: pointer;"
-                >
+            <div class="sort-group">
+                <label for="sort-by-select">Sort By:</label>
+                <select id="sort-by-select" onchange="filterPlayers()">
                     <option value="name">Player Name (A-Z)</option>
                     <option value="batting_rank">Batting Rank</option>
                     <option value="bowling_rank">Bowling Rank</option>
@@ -122,10 +358,41 @@
             </div>
         </div>
 
+        <p class="results-count" id="results-count"></p>
+
         <section id="player-cards-container">
         </section>
+
+        <footer>
+            <p>© 2026 Sooral Premier League</p>
+            <p>Made with ❤️ for Cricket</p>
+        </footer>
     </main>
 
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.querySelector('.menu-toggle');
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('active');
+                toggle.classList.remove('active');
+            }
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('main-nav').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/players.js"></script>
 </body>

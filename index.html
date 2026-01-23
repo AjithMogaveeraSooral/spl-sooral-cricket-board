@@ -5,119 +5,338 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sooral Premier League - Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --accent-color: #02f4d4;
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
         }
         
-        header {
-            display: block; 
+        /* Hero Section */
+        .hero-section {
             text-align: center;
-        }
-        
-        header h1 {
-            width: 100%;
-            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(2, 244, 212, 0.1) 0%, transparent 50%);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            animation: heroFade 0.8s ease-out;
         }
 
-        #key-stats-container {
-            display: flex;
-            justify-content: space-around;
-            background: rgba(0,0,0,0.3);
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 10px;
-            text-align: center;
+        @keyframes heroFade {
+            from {
+                opacity: 0;
+                transform: scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
-        #key-stats-container div h3 {
-            color: var(--accent-color);
+
+        .hero-section h2 {
             font-size: 2.5em;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #02F4D4 0%, #00d4aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        #leaders-container {
-            display: flex;
-            justify-content: space-between; 
+        .hero-section h2::before {
+            display: none;
+        }
+
+        .hero-section p {
+            font-size: 1.1em;
+            color: #a0a0c0;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Key Stats Container */
+        #key-stats-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(2, 244, 212, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(2, 244, 212, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .stat-box:hover::before {
+            left: 100%;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 30px rgba(2, 244, 212, 0.1);
+        }
+
+        .stat-box h3 {
+            color: var(--accent-color);
+            font-size: 3em;
+            margin-bottom: 5px;
+            font-weight: 800;
+        }
+
+        .stat-box p {
+            color: #a0a0c0;
+            font-size: 0.95em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px 0 25px;
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.6em;
+        }
+
+        .section-header .emoji {
+            font-size: 1.8em;
+        }
+
+        /* Leaders Container */
+        #leaders-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
             margin-top: 20px;
         }
+
         #leaders-container .player-card {
-            width: 100%; 
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid var(--accent-color);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+            border: 1px solid rgba(2, 244, 212, 0.3);
+            padding: 25px;
+            border-radius: 16px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        
+
+        #leaders-container .player-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(2, 244, 212, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        #leaders-container .player-card:hover::after {
+            opacity: 1;
+        }
+
         #leaders-container .player-card h3 {
             color: var(--accent-color);
-            margin-top: 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid rgba(2, 244, 212, 0.5);
+            font-size: 1.2em;
+            margin: 0 0 15px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(2, 244, 212, 0.3);
+            position: relative;
+            z-index: 1;
         }
 
-        #ranking-container {
-            display: flex; 
-            justify-content: space-between; 
-            gap: 20px; 
+        /* Rank 1 Holders Container */
+        #rank-1-holders-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
             margin-top: 20px;
         }
-        .ranking-list {
-            background-color: rgba(0,0,0,0.5);
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(2, 244, 212, 0.5);
+
+        .rank-holder-card {
+            background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.3));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transition: all 0.4s ease;
         }
+
+        .rank-holder-card:hover {
+            transform: translateY(-8px);
+            border-color: gold;
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.15);
+        }
+
+        .rank-holder-card .rank-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85em;
+        }
+
+        /* Ranking Container */
+        #ranking-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .ranking-list {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(2, 244, 212, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .ranking-list:hover {
+            border-color: rgba(2, 244, 212, 0.4);
+        }
+
         .ranking-list h3 {
             color: var(--accent-color);
             text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            padding-bottom: 10px;
-            margin-top: 0;
+            border-bottom: 2px solid rgba(2, 244, 212, 0.3);
+            padding-bottom: 15px;
+            margin: 0 0 20px 0;
+            font-size: 1.1em;
+        }
+
+        .ranking-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ranking-list li {
+            padding: 12px 15px;
+            margin: 8px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .ranking-list li:hover {
+            background: rgba(2, 244, 212, 0.1);
+            transform: translateX(5px);
+        }
+
+        .ranking-list li .rank-number {
+            background: var(--accent-color);
+            color: #000;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(2, 244, 212, 0.2);
+            color: #a0a0c0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            #key-stats-container,
+            #leaders-container,
+            #rank-1-holders-container,
+            #ranking-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
-            #key-stats-container {
-                flex-direction: column;
+            .hero-section h2 {
+                font-size: 1.8em;
             }
 
-            #leaders-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            #leaders-container .player-card {
-                width: 100%;
+            .hero-section p {
+                font-size: 1em;
             }
 
-            #rank-1-holders-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            #rank-1-holders-container > div {
-                 width: 100% !important;
-            }
-            
+            #key-stats-container,
+            #leaders-container,
+            #rank-1-holders-container,
             #ranking-container {
-                flex-direction: column;
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
-            #ranking-container > div {
-                width: 100% !important;
-            }
-            
-            header nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-            }
-            header nav a {
-                margin: 5px 0;
+
+            .stat-box h3 {
+                font-size: 2.5em;
             }
 
+            .section-header h2 {
+                font-size: 1.3em;
+            }
         }
 
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 25px 15px;
+            }
+
+            .hero-section h2 {
+                font-size: 1.5em;
+            }
+
+            .stat-box {
+                padding: 20px 15px;
+            }
+
+            .stat-box h3 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,27 +344,37 @@
     <div id="announcement-bar">Loading Announcement...</div>
 
     <header>
-        <h1>Sooral Premier League (SPL)</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="tournaments.html">Tournaments</a>
-            <a href="player_stats.html">Player Stats</a>
-        </nav>
+        <div class="header-content">
+            <h1>🏏 Sooral Premier League</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="player_stats.html">Player Stats</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Welcome to the SPL!</h2>
-        <p>The premier cricket tournament in Sooral, featuring 5 seasons of exciting action. All lifetime statistics are updated here.</p>
+        <section class="hero-section">
+            <h2>Welcome to the SPL!</h2>
+            <p>The premier cricket tournament in Sooral, featuring 5 seasons of exciting action. All lifetime statistics are updated here.</p>
+        </section>
 
         <section id="key-stats-container">
-            <div id="total-tournaments"></div>
-            <div id="total-matches"></div>
-            <div id="total-players"></div>
+            <div id="total-tournaments" class="stat-box"></div>
+            <div id="total-matches" class="stat-box"></div>
+            <div id="total-players" class="stat-box"></div>
         </section>
-        
-        
 
-        <h2>League Leaders (Lifetime)</h2>
+        <div class="section-header">
+            <span class="emoji">⭐</span>
+            <h2>League Leaders (Lifetime)</h2>
+        </div>
         
         <section id="leaders-container">
             <div id="highest-scorer-card" class="player-card"></div>
@@ -153,38 +382,69 @@
             <div id="highest-six-hitter-card" class="player-card"></div>
         </section>
 
+        <div class="section-header">
+            <span class="emoji">🏆</span>
+            <h2>SPL Rank 1 Holders</h2>
+        </div>
         
-
-        <h2>🏆 SPL Rank 1 Holders</h2>
-        
-        <section id="rank-1-holders-container" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 20px;">
-            <div id="rank-1-batter-card" style="width: 33%;"></div>
-            <div id="rank-1-bowler-card" style="width: 33%;"></div>
-            <div id="rank-1-allrounder-card" style="width: 33%;"></div>
+        <section id="rank-1-holders-container">
+            <div id="rank-1-batter-card"></div>
+            <div id="rank-1-bowler-card"></div>
+            <div id="rank-1-allrounder-card"></div>
         </section>
         
-        
-        
-        
-        <h2>🥇 SPL Rankings</h2>
+        <div class="section-header">
+            <span class="emoji">🥇</span>
+            <h2>SPL Rankings</h2>
+        </div>
 
         <section id="ranking-container">
-            <div id="batting-ranking" class="ranking-list" style="width: 33%;">
-                <h3>Top Batting Ranking 🏏</h3>
-                <ul style="list-style-type: none; padding: 0;"></ul>
+            <div id="batting-ranking" class="ranking-list">
+                <h3>🏏 Top Batting</h3>
+                <ul></ul>
             </div>
-            <div id="bowling-ranking" class="ranking-list" style="width: 33%;">
-                <h3>Top Bowling Ranking 🥎</h3>
-                <ul style="list-style-type: none; padding: 0;"></ul>
+            <div id="bowling-ranking" class="ranking-list">
+                <h3>🥎 Top Bowling</h3>
+                <ul></ul>
             </div>
-            <div id="allrounder-ranking" class="ranking-list" style="width: 33%;">
-                <h3>Top All-rounder Ranking ⭐</h3>
-                <ul style="list-style-type: none; padding: 0;"></ul>
+            <div id="allrounder-ranking" class="ranking-list">
+                <h3>⭐ Top All-rounder</h3>
+                <ul></ul>
             </div>
         </section>
 
+        <footer>
+            <p>© 2026 Sooral Premier League</p>
+            <p>Made with ❤️ for Cricket</p>
+        </footer>
     </main>
 
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.querySelector('.menu-toggle');
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('active');
+                toggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('main-nav').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
 </body>
