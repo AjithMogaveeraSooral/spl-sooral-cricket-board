@@ -1955,10 +1955,32 @@
   "tournaments": [
     {
       "id": "S2",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 2 (2022)",
       "matches": [
         {
           "match_id": "M201",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Sixers", "Sooral Warriors"],
           "winner": "Sooral Sixers",
           "man_of_the_match": "Ajith Mogaveera (22 runs)",
@@ -2129,6 +2151,10 @@
         },
         {
           "match_id": "M202",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Kings Sooral", "Sooral Bulls"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prathik (3 wickets for 5 runs)",
@@ -2307,6 +2333,10 @@
         },
         {
           "match_id": "M203",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "shashank (2 wickets for 2 runs)",
@@ -2485,6 +2515,10 @@
         },
         {
           "match_id": "M204",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Sixers", "Kings Sooral"],
           "winner": "Sooral Sixers",
           "man_of_the_match": "Ranjith Serigara (38 runs off 11 balls)",
@@ -2672,6 +2706,10 @@
         },
         {
           "match_id": "M205",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Kings Sooral", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Rakesh Sooral (3 wickets for 5 runs)",
@@ -2835,6 +2873,10 @@
         },
         {
           "match_id": "M206",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Bulls", "Sooral Sixers"],
           "winner": "Sooral Sixers",
           "man_of_the_match": "Ajith Mogaveera (2 wickets for 1 run)",
@@ -3030,6 +3072,10 @@
         },
         {
           "match_id": "M207",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Warriors", "Kings Sooral"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Vijay Sural (27 runs + 2 wickets)",
@@ -3186,6 +3232,10 @@
         },
         {
           "match_id": "M208_Final",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Bulls", "Sooral Sixers"],
           "winner": "Sooral Sixers",
           "man_of_the_match": "Raghavendra (2 wickets for 8 runs)",
@@ -3351,10 +3401,32 @@
     },
     {
       "id": "S3",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 3 (2023)",
       "matches": [
         {
           "match_id": "M301",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Warriors", "Sooral Sixers"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Ajith Mogaveera (Sooral Warriors)",
@@ -3564,6 +3636,10 @@
         },
         {
           "match_id": "M302",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Kings Sooral", "Sooral Bulls"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prajwal Devadiga (Kings Sooral)",
@@ -3765,6 +3841,10 @@
         },
         {
           "match_id": "M303",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Sooral Warriors", "Sooral Bulls"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Shashank (Sooral Bulls)",
@@ -3920,6 +4000,10 @@
         },
         {
           "match_id": "M304",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Kings Sooral", "Sooral Sixers"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prajwal Devadiga (53 runs)",
@@ -4192,6 +4276,10 @@
         },
         {
           "match_id": "M305",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Kings Sooral", "Sooral Warriors"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prajwal Devadiga (Kings Sooral)",
@@ -4416,6 +4504,10 @@
         },
         {
           "match_id": "M306",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Sooral Sixers", "Sooral Bulls"],
           "winner": "Sooral Sixers",
           "man_of_the_match": "Nagaraj (16 runs not out)",
@@ -4618,6 +4710,10 @@
         },
         {
           "match_id": "M307",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Bulls", "Kings Sooral"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "shashank (9 runs, 2 wickets for 3 runs)",
@@ -4798,10 +4894,32 @@
     },
     {
       "id": "S4",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 4 (2023)",
       "matches": [
         {
           "match_id": "M401",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Bulls", "Sooral Sixers"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Sharath Sooral (34 runs and 2 wickets)",
@@ -5012,6 +5130,10 @@
         },
         {
           "match_id": "M402",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Warriors", "Kings Sooral"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prathik (4 wickets for 15 runs)",
@@ -5199,6 +5321,10 @@
         },
         {
           "match_id": "M403",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Bulls", "Kings Sooral"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Sathish Banna (3 wickets for 21 runs)",
@@ -5417,6 +5543,10 @@
         },
         {
           "match_id": "M404",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Sixers", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "shashank (51 runs and 1 wicket)",
@@ -5594,6 +5724,10 @@
         },
         {
           "match_id": "M405",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Sixers", "Kings Sooral"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Ajith Mogaveera (33 runs and 1 wicket)",
@@ -5764,6 +5898,10 @@
         },
         {
           "match_id": "M406",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Sooral Warriors", "Sooral Bulls"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "shashank (85 runs and 0 wickets)",
@@ -5941,6 +6079,10 @@
         },
         {
           "match_id": "M407",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Kings Sooral", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "shashank (58 runs and 1 wicket)",
@@ -6128,10 +6270,32 @@
     },
     {
       "id": "S5",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 5 (2023)",
       "matches": [
         {
           "match_id": "M501",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Sixers", "Kings Sooral"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prathik (60 runs from 19 balls)",
@@ -6317,6 +6481,10 @@
         },
         {
           "match_id": "M502",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "shashank (60 runs from 26 balls)",
@@ -6517,6 +6685,10 @@
         },
         {
           "match_id": "M503",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Kings Sooral", "Sooral Bulls"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "shashank (35 runs from 19 balls)",
@@ -6702,6 +6874,10 @@
         },
         {
           "match_id": "M504",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Sixers", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Sharath Sooral (74 runs from 21 balls)",
@@ -6863,6 +7039,10 @@
         },
         {
           "match_id": "M505",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Kings Sooral", "Sooral Warriors"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Prathik (4 wickets for 8 runs)",
@@ -7097,6 +7277,10 @@
         },
         {
           "match_id": "M506",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Bulls", "Sooral Sixers"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Surendra Shetty (4 wickets for 30 runs)",
@@ -7329,6 +7513,10 @@
         },
         {
           "match_id": "M507",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Bulls", "Kings Sooral"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Shrisha Devadiga (39 runs and 4 wickets)",
@@ -7557,10 +7745,32 @@
     },
     {
       "id": "S6",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 6 (2024)",
       "matches": [
         {
           "match_id": "M601",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Kings Sooral", "Sooral Sixers"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Vijay Sural (3 wickets for 13 runs)",
@@ -7802,6 +8012,10 @@
         },
         {
           "match_id": "M602",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Sharath (61 runs off 23 balls)",
@@ -8011,6 +8225,10 @@
         },
         {
           "match_id": "M603",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Bulls", "Kings Sooral"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Vijay Sural (5 wickets for 13 runs)",
@@ -8253,6 +8471,10 @@
         },
         {
           "match_id": "M604",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Warriors", "Sooral Sixers"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Prajwal Devadiga (4 wickets for 23 runs)",
@@ -8502,6 +8724,10 @@
         },
         {
           "match_id": "M605",
+          "playing_xi": {
+            "Sooral Warriors": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Warriors", "Kings Sooral"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Chandan (63 runs off 22 balls)",
@@ -8680,6 +8906,10 @@
         },
         {
           "match_id": "M606",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Sooral Bulls", "Sooral Sixers"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Naveen Naveen (47 runs off 31 balls)",
@@ -8913,6 +9143,10 @@
         },
         {
           "match_id": "M607",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Sathish Banna (3 wickets for 7 runs)",
@@ -9118,10 +9352,32 @@
     },
     {
       "id": "S7",
+      "team_rosters": {
+        "Kings Sooral": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Bulls": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Sixers": {
+          "owners": [],
+          "squad": []
+        },
+        "Sooral Warriors": {
+          "owners": [],
+          "squad": []
+        }
+      },
       "name": "SPL - Season 7 (2025)",
       "matches": [
         {
           "match_id": "S7M01",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Sixers": []
+          },
           "teams": ["Kings Sooral", "Sooral Sixers"],
           "winner": "Kings Sooral",
           "man_of_the_match": "Vijay Sural (57 runs & 2 wickets)",
@@ -9337,6 +9593,10 @@
         },
         {
           "match_id": "S7M02",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Sathish Banna (5 wickets for 16 runs)",
@@ -9569,6 +9829,10 @@
         },
         {
           "match_id": "S7M03",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Kings Sooral": []
+          },
           "teams": ["Sooral Bulls", "Kings Sooral"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Nithin S (43 runs off 25 balls)",
@@ -9818,6 +10082,10 @@
         },
         {
           "match_id": "S7M04",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Sixers", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Shashank (20 runs off 5 balls & tight bowling)",
@@ -10004,6 +10272,10 @@
         },
         {
           "match_id": "S7M05",
+          "playing_xi": {
+            "Kings Sooral": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Kings Sooral", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Shashank (56 runs off 19 balls)",
@@ -10174,6 +10446,10 @@
         },
         {
           "match_id": "S7M06",
+          "playing_xi": {
+            "Sooral Sixers": [],
+            "Sooral Bulls": []
+          },
           "teams": ["Sooral Sixers", "Sooral Bulls"],
           "winner": "Sooral Bulls",
           "man_of_the_match": "Rakshi S (67 runs off 34 balls)",
@@ -10350,6 +10626,10 @@
         },
         {
           "match_id": "S7M07",
+          "playing_xi": {
+            "Sooral Bulls": [],
+            "Sooral Warriors": []
+          },
           "teams": ["Sooral Bulls", "Sooral Warriors"],
           "winner": "Sooral Warriors",
           "man_of_the_match": "Shashank (61 runs off 21 balls & 2 wickets)",

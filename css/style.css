@@ -1,3 +1,4 @@
+.language-select { color: #fff; background: #18232c; font: inherit; border: 1px solid #677780; padding: .3rem; border-radius: 4px; }
 .team-badge { object-fit: contain; background: #080808; border-radius: 4px; vertical-align: middle; flex: none; }
 .roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: .75rem; align-items: start; margin: .75rem 0 1.5rem; }
 .roster-grid details { border: 1px solid #475569; border-radius: 6px; padding: .5rem; }

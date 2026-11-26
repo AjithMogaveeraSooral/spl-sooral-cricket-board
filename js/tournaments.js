@@ -7,8 +7,8 @@ function teamBadge(name) {
     return badge ? `<img class="team-badge" src="images/teams/${badge}.jpg" width="40" height="40" alt="">` : '';
 }
 
-function seasonTeams(matches) {
-    const teams = new Map();
+function seasonTeams(matches, rosters) {
+    const teams = new Map(Object.keys(rosters).map(name => [name, new Map()]));
     for (const match of matches) {
         const sides = match.teams || [];
         for (const side of sides) if (!teams.has(side)) teams.set(side, new Map());
@@ -26,11 +26,22 @@ function seasonTeams(matches) {
     return Array.from(teams, ([name, players]) => ({ name, players: [...players.values()].sort((left, right) => left.localeCompare(right)) })).sort((left, right) => left.name.localeCompare(right.name));
 }
 
-function renderSeasonTeams(matches) {
+function rosterText(value) {
+    const span = document.createElement('span');
+    span.textContent = value;
+    return span.outerHTML;
+}
+
+function renderSeasonTeams(matches, rosters = {}) {
     const container = document.getElementById('season-teams');
-    const teams = seasonTeams(matches);
+    const teams = seasonTeams(matches, rosters);
     container.hidden = !teams.length;
-    container.querySelector('.roster-grid').innerHTML = teams.map(({ name, players }) => `<details><summary>${teamBadge(name)} ${name} (${players.length})</summary><div class="roster-names">${players.length ? players.map(player => historyButton(player)).join('') : 'No player entries recorded.'}</div></details>`).join('');
+    container.querySelector('.roster-grid').innerHTML = teams.map(({ name, players }) => {
+        const roster = rosters[name];
+        const hasSquad = roster?.squad?.length > 0;
+        const names = hasSquad ? roster.squad : players;
+        return `<details><summary>${teamBadge(name)} ${rosterText(name)} (${names.length})</summary><p>Owners: ${rosterText(roster?.owners?.join(', ') || 'Not listed')}</p><strong>${hasSquad ? 'Season squad' : 'Squad not entered. Scorecard appearances:'}</strong><div class="roster-names">${names.map(player => historyButton(player)).join('') || 'No appearances recorded.'}</div></details>`;
+    }).join('');
 }
 
 function generateBattingTable(team, score, stats, inningsNumber) {
@@ -134,7 +145,7 @@ function loadMatches() {
     const selectedId = selector.value;
 
     const selectedTournament = allTournaments.find(t => t.id === selectedId);
-    renderSeasonTeams(selectedTournament?.matches || []);
+    renderSeasonTeams(selectedTournament?.matches || [], selectedTournament?.team_rosters);
 
     if (!selectedId) {
         document.getElementById('matches-container').innerHTML = `
@@ -189,7 +200,7 @@ function displayScorecard(matchId) {
     const modalTitle = document.getElementById('modal-title');
     const modalBody = document.getElementById('modal-body');
     
-    if (match && match.detailed_scorecard) {
+    if (match?.detailed_scorecard?.innings1 && match.detailed_scorecard.innings2) {
         const scorecard = match.detailed_scorecard;
 
         modalTitle.textContent = `${match.teams[0]} vs ${match.teams[1]}`;
@@ -235,9 +246,13 @@ function displayScorecard(matchId) {
             </div>
         `;
     } else {
-        modalTitle.textContent = 'Scorecard Not Found';
+        modalTitle.textContent = match ? match.teams.join(' vs ') : 'Scorecard Not Found';
         modalBody.innerHTML = `<p style="text-align: center; color: #a0a0c0;">Scorecard not found for Match ID: ${matchId} or detailed data is missing.</p>`;
     }
+    if (match) modalBody.insertAdjacentHTML('afterbegin', `<section><h3>Playing XI</h3><div class="roster-grid">${match.teams.map(name => {
+        const lineup = match.playing_xi?.[name] || [];
+        return `<details><summary>${teamBadge(name)} ${rosterText(name)}</summary><div class="roster-names">${lineup.map(player => historyButton(player)).join('') || 'Lineup not entered.'}</div></details>`;
+    }).join('')}</div></section>`);
 }
 
 
