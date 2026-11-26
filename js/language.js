@@ -1,7 +1,7 @@
 (() => {
     const key = 'spl-language';
-    let language = 'en';
-    try { if (localStorage.getItem(key) === 'kn') language = 'kn'; } catch {}
+    let language = 'kn';
+    try { if (localStorage.getItem(key) === 'en') language = 'en'; } catch {}
     const selector = document.createElement('select');
     selector.className = 'language-select';
     selector.setAttribute('aria-label', 'Language / ಭಾಷೆ');
