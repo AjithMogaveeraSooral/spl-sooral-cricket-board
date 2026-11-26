@@ -7751,20 +7751,24 @@
       "id": "S6",
       "team_rosters": {
         "Kings Sooral": {
-          "owners": [],
-          "squad": []
+          "owners": ["Sachin"],
+          "captain": "Vijay",
+          "squad": ["Vijay", "Shashank", "Chandan", "Karthik Devadiga", "Sathish Pillu", "Sunil", "Sannidhi", "Rakshith B", "Vikas", "Poornesh", "Nishith", "Prathyak", "Diganth", "Ajith AJ", "Gautham", "Santhosh Channa", "Sathish Anna"]
         },
         "Sooral Bulls": {
-          "owners": [],
-          "squad": []
+          "owners": ["Vasu"],
+          "captain": "Raghavendra",
+          "squad": ["Raghavendra", "Sharath", "Rakesh", "Sadananda", "Raviraj", "Nagaraj", "Shriharsha", "Yashaswi", "Sacheendra", "Varun", "Swasthik", "Nishan", "Sathwik", "Santhosh Kumar", "Sujay", "Vasu Balkattu"]
         },
         "Sooral Sixers": {
-          "owners": [],
-          "squad": []
+          "owners": ["Vasanth"],
+          "captain": "Mahendra",
+          "squad": ["Mahendra", "Prajwal", "Shreesha", "Naveen", "Surendra", "Amith", "Krishnamurthy", "Nishan Gunda", "Tiger", "Anupama", "Ranju J", "Sandeep", "Sudeep", "Raghavendra B", "Gangu", "Prabhakar"]
         },
         "Sooral Warriors": {
-          "owners": [],
-          "squad": []
+          "owners": ["Anand Sooral"],
+          "captain": "Ganesh Devadiga",
+          "squad": ["Ganesh Devadiga", "Ajith", "Rakshith", "Sathish Banna", "Dileep", "Nithin", "Ganesh RTO", "Prasanna Gunda", "Poornesh", "Nirupama", "Preetham", "Bulli", "Shrujan", "Sharath Saligrama", "Narasimha", "Sandeep Dileep Bava", "Deepak"]
         }
       },
       "name": "SPL - Season 6 (2024)",
@@ -9358,20 +9362,24 @@
       "id": "S7",
       "team_rosters": {
         "Kings Sooral": {
-          "owners": [],
-          "squad": []
+          "owners": ["Ganesh B Sural"],
+          "captain": "Vijay",
+          "squad": ["Vijay", "Bulli", "Chandan", "Ganesh B Sural", "Ganesh RTO", "Gangadhar S", "Gautham GH", "Kathi S (Karthik Devadiga)", "Prabhakar", "Rakesh Sooral", "Raviraj", "Sathish Pillu S", "Shriharsha"]
         },
         "Sooral Bulls": {
-          "owners": [],
-          "squad": []
+          "owners": ["Anand Sooral"],
+          "captain": "Rakshith S",
+          "squad": ["Rakshith S", "Deepak", "Dileep Sural", "Nishan", "Nithin S", "Poornesh Shetty", "Prasanna Gunda", "Prathyak", "Rakesh Sooral", "Ranjith Serigara", "Sacheendra S", "Sathish Banna", "Sathwik", "Sharath Sooral", "Yashu Sooral"]
         },
         "Sooral Sixers": {
-          "owners": [],
-          "squad": []
+          "owners": ["Raghavendra Shriyan"],
+          "captain": "Ajith Mogveera",
+          "squad": ["Ajith Mogveera", "Smith S", "Aryan", "Diganth", "Nishan Gunda", "Prajwal Devadiga", "Preetham S", "Raghavendra", "Raghavendra Shriyan", "Sadananda", "Santhosh Kumar", "Sharath", "Sujay S", "Surendra", "Uttam"]
         },
         "Sooral Warriors": {
-          "owners": [],
-          "squad": []
+          "owners": ["Vasanth Gunda S"],
+          "captain": "Naveen",
+          "squad": ["Naveen", "Mahendra kali", "Nishith Sooral", "Rakshith B", "Ravichandran", "Sannidhi S", "Shashank", "Shrisha Devadiga", "Shrujan", "Sunil Sural", "Swasthik", "Tiger Sathu", "Vasu Nilavara"]
         }
       },
       "name": "SPL - Season 7 (2025)",
