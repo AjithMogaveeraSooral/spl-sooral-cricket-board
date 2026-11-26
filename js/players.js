@@ -206,6 +206,7 @@ function createPlayerCard(player) {
                 <img src="${imageUrl}" style="width:80px; height:80px; object-fit:cover; border-radius:50%; border:2px solid rgba(0,200,180,0.2);">
                 <div style="flex:1;">
                     <h3 style="margin:0; font-size:1.15rem;">${player.name}</h3>
+                    ${historyButton(player.name, 'Match history')}
 
                     <div style="display:flex; gap:14px; margin-top:4px;">
                         <div style="text-align:center;">
@@ -322,6 +323,7 @@ function filterPlayers() {
 
 async function initPlayerStats() {
     const data = await fetchSPLData();
+    if (data) enablePlayerHistory(data);
     if (data && data.players) {
         allPlayersData = data.players.map(p => ({ ...p }));
         rankedPlayersData = sortPlayersByName(calculateRanks(allPlayersData));

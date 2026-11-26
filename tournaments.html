@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL Tournaments & Matches</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="images/spl-logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -711,7 +712,7 @@
 
     <header>
         <div class="header-content">
-            <h1>🏏 Sooral Premier League</h1>
+            <h1><img class="league-logo" src="images/spl-logo.jpg" width="36" height="36" alt=""> Sooral Premier League</h1>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -733,10 +734,16 @@
 
         <div class="selector-container">
             <label for="tournament-selector">Select Season:</label>
-            <select id="tournament-selector" onchange="loadMatches()">
+            <select id="tournament-selector">
                 <option value="">-- Choose a Season --</option>
             </select>
         </div>
+
+        <section id="season-teams" hidden>
+            <h3>Teams</h3>
+            <p>Players recorded in this season's batting and bowling scorecards.</p>
+            <div class="roster-grid"></div>
+        </section>
 
         <div class="section-title">
             <span class="icon">⚔️</span>
@@ -794,6 +801,7 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/playerHistory.js"></script>
     <script src="js/tournaments.js"></script>
 </body>
 </html>

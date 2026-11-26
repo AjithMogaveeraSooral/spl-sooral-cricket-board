@@ -1,5 +1,38 @@
 let allTournaments = [];
 
+const teamBadges = new Map([['Sooral Sixers', 'sixers'], ['Sooral Warriors', 'warriors'], ['Kings Sooral', 'kings'], ['Sooral Bulls', 'bulls']]);
+
+function teamBadge(name) {
+    const badge = teamBadges.get(name);
+    return badge ? `<img class="team-badge" src="images/teams/${badge}.jpg" width="40" height="40" alt="">` : '';
+}
+
+function seasonTeams(matches) {
+    const teams = new Map();
+    for (const match of matches) {
+        const sides = match.teams || [];
+        for (const side of sides) if (!teams.has(side)) teams.set(side, new Map());
+        for (const innings of Object.values(match.detailed_scorecard || {})) {
+            if (!sides.includes(innings?.batting_team)) continue;
+            const opponent = sides.find(side => side !== innings.batting_team);
+            for (const [side, rows] of [[innings.batting_team, innings.batting_stats], [opponent, innings.bowling_stats]]) {
+                for (const row of rows || []) {
+                    const key = playerKey(row.name);
+                    if (key) teams.get(side)?.set(key, row.name.replace(/\s*\((?:c|wk)\)/gi, '').trim());
+                }
+            }
+        }
+    }
+    return Array.from(teams, ([name, players]) => ({ name, players: [...players.values()].sort((left, right) => left.localeCompare(right)) })).sort((left, right) => left.name.localeCompare(right.name));
+}
+
+function renderSeasonTeams(matches) {
+    const container = document.getElementById('season-teams');
+    const teams = seasonTeams(matches);
+    container.hidden = !teams.length;
+    container.querySelector('.roster-grid').innerHTML = teams.map(({ name, players }) => `<details><summary>${teamBadge(name)} ${name} (${players.length})</summary><div class="roster-names">${players.length ? players.map(player => historyButton(player)).join('') : 'No player entries recorded.'}</div></details>`).join('');
+}
+
 function generateBattingTable(team, score, stats, inningsNumber) {
     let tableHtml = `
         <div class="team-score-header">
@@ -23,7 +56,7 @@ function generateBattingTable(team, score, stats, inningsNumber) {
     stats.forEach(s => {
         tableHtml += `
             <tr>
-                <td class="player-name">${s.name}</td>
+                <td class="player-name">${historyButton(s.name)}</td>
                 <td class="player-status">${s.status}</td>
                 <td class="text-right stat-runs">${s.runs}</td>
                 <td class="text-right">${s.balls}</td>
@@ -54,7 +87,7 @@ function generateBowlingTable(stats) {
     stats.forEach(s => {
         tableHtml += `
             <tr>
-                <td class="player-name">${s.name}</td>
+                <td class="player-name">${historyButton(s.name)}</td>
                 <td class="text-right">${s.overs}</td>
                 <td class="text-right">${s.runs}</td>
                 <td class="text-right stat-wickets">${s.wickets}</td>
@@ -79,7 +112,7 @@ function populateTournamentSelector(tournaments) {
 function createMatchCard(match) {
     return `
         <div class="match-card" onclick="openScorecard('${match.match_id}')">
-            <h4>⚔️ ${match.teams[0]} vs ${match.teams[1]}</h4>
+            <h4 class="match-sides"><span>${teamBadge(match.teams[0])}${match.teams[0]}</span> vs <span>${teamBadge(match.teams[1])}${match.teams[1]}</span></h4>
             <p class="match-winner">${match.winner}</p>
             <p>🏅 ${match.man_of_the_match}</p>
             <p style="font-size: 0.85em; color: var(--accent-color); margin-top: 10px;">Click to view scorecard →</p>
@@ -100,6 +133,9 @@ function loadMatches() {
     const selector = document.getElementById('tournament-selector');
     const selectedId = selector.value;
 
+    const selectedTournament = allTournaments.find(t => t.id === selectedId);
+    renderSeasonTeams(selectedTournament?.matches || []);
+
     if (!selectedId) {
         document.getElementById('matches-container').innerHTML = `
             <div class="empty-matches">
@@ -109,8 +145,6 @@ function loadMatches() {
         `;
         return;
     }
-
-    const selectedTournament = allTournaments.find(t => t.id === selectedId);
 
     if (selectedTournament) {
         renderMatchCards(selectedTournament.matches);
@@ -140,7 +174,7 @@ function closeModal(event) {
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
+    if (e.key === 'Escape' && !document.querySelector('.history-dialog[open]')) {
         closeScorecard();
     }
 });
@@ -211,6 +245,7 @@ async function initTournaments() {
     const data = await fetchSPLData(); 
     if (data && data.tournaments) {
         allTournaments = data.tournaments;
+        enablePlayerHistory(data);
         populateTournamentSelector(allTournaments);
         
         document.getElementById('tournament-selector').addEventListener('change', loadMatches);

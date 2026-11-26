@@ -1,3 +1,20 @@
+.team-badge { object-fit: contain; background: #080808; border-radius: 4px; vertical-align: middle; flex: none; }
+.roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: .75rem; align-items: start; margin: .75rem 0 1.5rem; }
+.roster-grid details { border: 1px solid #475569; border-radius: 6px; padding: .5rem; }
+.roster-grid summary { cursor: pointer; font-weight: 600; }
+.roster-names { display: grid; justify-items: start; padding: .5rem; }
+.match-sides { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+.match-sides span { display: inline-flex; align-items: center; gap: .4rem; }
+.league-logo { border-radius: 8px; vertical-align: middle; }
+.history-link { background: transparent; border: 0; padding: .25rem 0; color: var(--accent-color, #00e5b8); font: inherit; text-align: left; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
+.history-dialog { box-sizing: border-box; margin: auto; width: min(36rem, 94vw); max-height: 85vh; padding: 1.25rem; border: 1px solid #475569; border-radius: 8px; color: #f8fafc; background: #151d2b; overscroll-behavior: contain; }
+.history-dialog::backdrop { background: rgb(0 0 0 / 65%); }
+.history-dialog header { position: static; display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: transparent; padding: 0; }
+.history-dialog header button { background: transparent; color: inherit; border: 0; font-size: 1.8rem; cursor: pointer; }
+.history-dialog article { padding: .85rem 0; border-top: 1px solid #475569; }
+.history-dialog p, .history-dialog h4 { margin: .4rem 0; }
+.history-dialog small { color: #becbd7; }
+.history-dialog label { margin-bottom: .75rem; }
 :root {
     --primary-color: #0a0a2e;
     --primary-light: #141452;
