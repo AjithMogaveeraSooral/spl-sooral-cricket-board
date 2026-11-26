@@ -8,7 +8,7 @@
     selector.add(new Option('English', 'en'));
     selector.add(new Option('ಕನ್ನಡ', 'kn'));
     selector.value = language;
-    document.querySelector('#main-nav').append(selector);
+    document.querySelector('#main-nav').after(selector);
 
     const originals = new WeakMap();
     function update(node, field, read, write) {
