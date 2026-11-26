@@ -3404,19 +3404,23 @@
       "team_rosters": {
         "Kings Sooral": {
           "owners": [],
-          "squad": []
+          "captain": "Vijay",
+          "squad": ["Vijay", "Kartik", "Raviraj", "pachha", "Prajwal", "Nitin", "Prasanna", "Shri harsha", "Nischith", "Amith", "Karthik Angdi", "Bili Gunda"]
         },
         "Sooral Bulls": {
           "owners": [],
-          "squad": []
+          "captain": "Rakshith",
+          "squad": ["Rakshith", "Raghavendra", "Pratik", "Sharath", "Shashank", "Yashu", "Satish Pillu", "Sachindra", "Nishana", "Vikas", "Preetham"]
         },
         "Sooral Sixers": {
           "owners": [],
-          "squad": []
+          "captain": "Sathish",
+          "squad": ["Sathish", "Dilip", "Surendra", "Rakeesh", "ranju", "Sachhu", "Ganesh", "Sunil", "Raksshith blkt", "Mahendra", "Nagaraj", "Santhosh Kumar"]
         },
         "Sooral Warriors": {
           "owners": [],
-          "squad": []
+          "captain": "Ganesh",
+          "squad": ["Ganesh", "Santhosh Channa", "Shreesha", "Ajith surl", "Sada", "Ajith blk", "Sannidhi", "Nirupam", "Poornesh", "Sudeep", "Sujay", "Prathyak"]
         }
       },
       "name": "SPL - Season 3 (2023)",
@@ -4896,20 +4900,20 @@
       "id": "S4",
       "team_rosters": {
         "Kings Sooral": {
-          "owners": [],
-          "squad": []
+          "owners": ["Surendra"],
+          "squad": ["Ajith", "S Vijay", "Prathik", "Nithin", "Amith", "Ganesh RTO", "Yashaswi", "Sannidhi", "Karthik Image", "Vikas", "Poornesh", "Jayanth", "Sacheendra"]
         },
         "Sooral Bulls": {
-          "owners": [],
-          "squad": []
+          "owners": ["Vasanth"],
+          "squad": ["Ranjith", "Sharath", "Sathish Banna", "Dileep", "Ajith AJ", "Sunil", "Deepak", "Sathish S H", "Nishan Gunda", "Sudeep", "Sagar", "Sandeep", "Bullii"]
         },
         "Sooral Sixers": {
-          "owners": [],
-          "squad": []
+          "owners": ["Prashanth"],
+          "squad": ["Sadananda", "Naveen", "Karthik D", "Prajwal", "Mahendra", "Sachin", "Nagaraj", "Ganga", "Santhosh Kumar", "Nishith", "Ranju B", "Gautham GH", "Jnanesh"]
         },
         "Sooral Warriors": {
-          "owners": [],
-          "squad": []
+          "owners": ["Anand"],
+          "squad": ["Shashank", "Rakshith S", "Rakesh", "Shriharsha", "Shreesha", "Raghavendra", "Rakshith B", "Ganesh", "Prasanna Gunda", "Pratyak", "Nirupam", "Preetham", "Vasu Anna"]
         }
       },
       "name": "SPL - Season 4 (2023)",
@@ -6273,19 +6277,19 @@
       "team_rosters": {
         "Kings Sooral": {
           "owners": [],
-          "squad": []
+          "squad": ["Anand Anna", "Sachin", "Prathik", "Chandan", "Ajith", "Mahendra", "Amith", "Raviraj", "Sannidhi", "Ganeshanna", "Sujay", "Gangu", "Varun", "Sathwik", "Ranju"]
         },
         "Sooral Bulls": {
           "owners": [],
-          "squad": []
+          "squad": ["Prabhakar", "Surendra", "Shashank", "Prajwal", "Karthik", "Nagrajanna", "Karthik Image", "Yashu", "Shreesha", "Prasanna", "Nirupam", "Santhosh Tiger", "Preetham", "Swathik", "Sandeep", "Diganth"]
         },
         "Sooral Sixers": {
           "owners": [],
-          "squad": []
+          "squad": ["Santhosh Kumar", "Sathish Banna", "Rakesh", "Ranjith", "Rakshith Kumar", "Nithin", "Sunil", "Raghavendra", "Sadananda", "Nishan Gunda", "Poornesh", "Nagaraj Gunda", "Prathyak", "Nishan", "Bulli"]
         },
         "Sooral Warriors": {
           "owners": [],
-          "squad": []
+          "squad": ["Vasanth Gunda", "Dileep", "Sharath", "Vijay", "Rakshith", "Deepak", "Ajith AJ", "Sathish Pillu", "Shriharsha", "Vikas", "Vasu", "Sacheendra", "Suddep", "Nishith", "Sagar"]
         }
       },
       "name": "SPL - Season 5 (2023)",

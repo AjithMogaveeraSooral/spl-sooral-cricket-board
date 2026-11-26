@@ -40,7 +40,8 @@ function renderSeasonTeams(matches, rosters = {}) {
         const roster = rosters[name];
         const hasSquad = roster?.squad?.length > 0;
         const names = hasSquad ? roster.squad : players;
-        return `<details><summary>${teamBadge(name)} ${rosterText(name)} (${names.length})</summary><p>Owners: ${rosterText(roster?.owners?.join(', ') || 'Not listed')}</p><strong>${hasSquad ? 'Season squad' : 'Squad not entered. Scorecard appearances:'}</strong><div class="roster-names">${names.map(player => historyButton(player)).join('') || 'No appearances recorded.'}</div></details>`;
+        const buttons = names.map(player => historyButton(player, player === roster?.captain ? `${player} (C)` : player));
+        return `<details><summary>${teamBadge(name)} ${rosterText(name)} (${names.length})</summary><p>Owners: ${rosterText(roster?.owners?.join(', ') || 'Not listed')}</p><strong>${hasSquad ? 'Season squad' : 'Squad not entered. Scorecard appearances:'}</strong><div class="roster-names">${buttons.join('') || 'No appearances recorded.'}</div></details>`;
     }).join('');
 }
 
